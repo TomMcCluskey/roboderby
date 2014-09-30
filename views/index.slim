@@ -5,3 +5,9 @@ html
 
   body
     h1 The Board
+    - if @space.any?
+      table#board
+      - for rows in @space
+        tr
+        - for square in row
+            td

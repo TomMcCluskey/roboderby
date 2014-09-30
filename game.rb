@@ -5,7 +5,7 @@ class Board
     rows.times do
       row = []
       cols.times do
-        square = Square.new
+        square = Square.new({:type => 'empty'}) #adds dependency. How to avoid?
         row.push square
       end
       @space.push row
@@ -21,18 +21,40 @@ class Board
     end
   end
 
+  def [](row, col)
+    @space[row][col]
+  end
+
+#  def move(args = {'distance' => 1})
+#    #this will take a bot, direction, and distance and move the bot
+#    bot = args[bot]
+#    start = bot.coords
+#    direction = args.direction || bot.facing
+#    distance = args.distance
+#    distance.times do |move|
+#      case direction
+#      when 0
+#        bot coords = @space[start[0]]([start[1]] + 1)
+#      end
+#    end
+#  end
+
+  def is_clear?
+    #this will check with some Sqaures to see if movement or LoS is clear
+  end
+
 end
 
 class Square
   attr_reader :type, :occupier
-  def initialize(type='empty')
-    @type = type
+  def initialize(args)
+    @type = args['type'] || 'empty'
     @occupier = nil
   end
 
   def to_s
     if is_empty?
-      case type
+      case @type
       when 'empty'            then '_'
       when 'gear'             then '*'
       when 'pit'              then '0'
@@ -46,37 +68,55 @@ class Square
     end
   end
 
+  def <<(bot)
+    @occupier = bot
+    bot.coords = self
+  end
+
+  def remove(bot)
+    bot.coords = nil
+    @occupier = nil
+  end
+
   def is_empty?
     @occupier ? false : true
   end
 
-  def occupier=(player)
-    @occupier = player
-    # seems like duplication to have each square know who is on it
-    # and also have each robot know what square it's on.
-    # But it makes sense that they each know these things.
+  def occupier=(piece)
+    @occupier = piece
   end
 
 end
 
 class Bot
   attr_reader :facing
-  def initialize(coords, facing)
-    @facing = facing
-    @coords = coords
-    coords.occupier=(self)
+  attr_accessor :coords
+  def initialize(args)
+    @facing = args[:facing] || 0
+    @coords = args[:coords]
+    @coords.occupier = self
   end
 
   def to_s
-    '&'
+    case @facing
+    when 0 then '^'
+    when 1 then '>'
+    when 2 then 'v'
+    when 3 then '<'
+    else '?'
+    end
   end
 
-  def move(distance=1, direction=@facing)
-
+  def turn_right
+    @facing = (@facing + 1) % 4
   end
 
-  def turn(degrees)
+  def turn_left
+    @facing = (@facing + 3) % 4
+  end
 
+  def u_turn
+    @facing = (@facing + 2) % 4
   end
 
   def take_damage(amount=1)
@@ -98,6 +138,10 @@ class Move_card
 end
 
 board = Board.new()
-twonky = Bot.new(board.space[0][0], 'south')
+twonky = Bot.new({:coords => board[0,0]})
+twitch = Bot.new({:coords => board[5,3], :facing => 2})
+twonky.turn_right
+twitch.u_turn
 puts board
-puts twonky
+board[5,0] << twonky
+puts board
