@@ -2,12 +2,19 @@ class Board
   attr_accessor :space
   def initialize(cols=12, rows=12)
     @space = []
+    y = 0
+    x = 0
     rows.times do
       row = []
       cols.times do
-        square = Square.new({:type => 'empty'}) #adds dependency. How to avoid?
+        square = Square.new({:type => 'empty'})
+        square.y = y
+        square.x = x
         row.push square
+        x += 1
       end
+      y += 1
+      x = 0
       @space.push row
     end
   end
@@ -25,30 +32,65 @@ class Board
     @space[row][col]
   end
 
-#  def move(args = {'distance' => 1})
-#    #this will take a bot, direction, and distance and move the bot
-#    bot = args[bot]
-#    start = bot.coords
-#    direction = args.direction || bot.facing
-#    distance = args.distance
-#    distance.times do |move|
-#      case direction
-#      when 0
-#        bot coords = @space[start[0]]([start[1]] + 1)
-#      end
-#    end
-#  end
+  def move(args)
+    #this will take a bot, direction, and distance and move the bot
+    puts args
+    bot = args['bot']
+    direction = args['direction'] || bot.facing
+    distance = args['distance'] || 1
+    distance.times do |move|
+      case direction
+      when 0
+        north_of(bot.coords) << bot
+      when 1
+        puts "direction: #{direction}"
+        east_of(bot.coords) << bot
+      when 2
+        south_of(bot.coords) << bot
+      when 3
+        west_of(bot.coords) << bot
+      end
+    end
+  end
 
-  def is_clear?
-    #this will check with some Sqaures to see if movement or LoS is clear
+  def north_of(square)
+    x = square.x
+    y = square.y
+    self[x, y+1]
+  end
+
+  def east_of(square)
+    x = square.x
+    y = square.y
+    self[x+1, y]
+  end
+
+  def south_of(square)
+    x = square.x
+    y = square.y
+    puts self[x, y-1]
+    self[x, y-1]
+  end
+
+  def west_of(square)
+    x = square.x
+    y = square.y
+    self[x-1, y]
+  end
+
+  def path_to?
+    #this will check with some Sqaures to see if movement is clear
   end
 
 end
 
 class Square
-  attr_reader :type, :occupier
+
+  # Example Square: Square.new( {type => :gear, walls => [ :north, :south ]} )
+  attr_reader :type, :occupier, :x, :y
   def initialize(args)
     @type = args['type'] || 'empty'
+    @walls = args['walls'] || []
     @occupier = nil
   end
 
@@ -61,11 +103,19 @@ class Square
       when 'conveyor'         then '-'
       when 'double_conveyor'  then '='
       when 'water'            then '~'
-      else '^'
+      else '?'
       end
     else
       @occupier.to_s
     end
+  end
+  
+  def x=(x)
+    @x = x
+  end
+
+  def y=(y)
+    @y = y
   end
 
   def <<(bot)
@@ -143,5 +193,5 @@ twitch = Bot.new({:coords => board[5,3], :facing => 2})
 twonky.turn_right
 twitch.u_turn
 puts board
-board[5,0] << twonky
+board.move({'bot' => twonky, 'distance' => 3})
 puts board
