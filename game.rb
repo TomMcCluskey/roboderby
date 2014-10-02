@@ -28,28 +28,28 @@ class Board
     end
   end
 
-  def [](row, col)
-    @space[row][col]
+  def [](col, row)
+    @space[row][col] #this method bears examination
   end
 
   def move(args)
     #this will take a bot, direction, and distance and move the bot
-    puts args
     bot = args['bot']
     direction = args['direction'] || bot.facing
     distance = args['distance'] || 1
     distance.times do |move|
+      start = bot.coords
       case direction
       when 0
         north_of(bot.coords) << bot
       when 1
-        puts "direction: #{direction}"
         east_of(bot.coords) << bot
       when 2
         south_of(bot.coords) << bot
       when 3
         west_of(bot.coords) << bot
       end
+      start.occupier = nil #may cause problems when running into walls
     end
   end
 
