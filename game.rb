@@ -87,13 +87,14 @@ end
 class Square
 
   # Example Square: Square.new( {type => :gear, walls => [ :north, :south ]} )
-  attr_reader :type, :occupier, :x, :y
+  attr_reader :type, :occupier, :x, :y, :walls
   def initialize(args)
     @type = args['type'] || 'empty'
     @walls = args['walls'] || []
     @occupier = nil
   end
 
+  # just in case you want to play roborally on the command line, I guess
   def to_s
     if is_empty?
       case @type

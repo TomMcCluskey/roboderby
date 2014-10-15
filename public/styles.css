@@ -1,10 +1,16 @@
 table {
-  border: 3px solid black;
   empty-cells: show;
   border-collapse: collapse;
+  padding: 0px;
+}
+tr {
+  padding: 0px;
 }
 td {
-  border: 1px dotted grey;
-  width: 45px;
-  height: 45px;
+  padding: 0px;
+  width: 75px;
+  height: 75px;
+}
+td.empty {
+  background-image: url('images/empty.png')
 }
