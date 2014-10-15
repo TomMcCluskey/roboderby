@@ -1,13 +1,14 @@
 doctype html
 html
   head
+  link href='/styles.css' rel='stylesheet' type='text/css'
     title Roboderby!
 
   body
     h1 The Board
-    - if @space.any?
+    - if @board
       table#board
-      - for rows in @space
-        tr
-        - for square in row
+        - for row in @board.space
+          tr
+          - for square in row
             td

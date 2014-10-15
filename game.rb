@@ -49,7 +49,7 @@ class Board
       when 3
         west_of(bot.coords) << bot
       end
-      start.occupier = nil #may cause problems when running into walls
+      start.occupier = nil #will cause problems when running into walls
     end
   end
 
@@ -187,11 +187,11 @@ class Move_card
 
 end
 
-board = Board.new()
-twonky = Bot.new({:coords => board[0,0]})
-twitch = Bot.new({:coords => board[5,3], :facing => 2})
-twonky.turn_right
-twitch.u_turn
-puts board
-board.move({'bot' => twonky, 'distance' => 3})
-puts board
+# board = Board.new
+# twonky = Bot.new({:coords => board[0,0]})
+# twitch = Bot.new({:coords => board[5,3], :facing => 2})
+# twonky.turn_right
+# twitch.u_turn
+# puts board
+# board.move({'bot' => twonky, 'distance' => 3})
+# puts board
