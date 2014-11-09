@@ -4,5 +4,6 @@ require './game.rb'
 
 get '/' do
   @board = Board.new
+  @twonky = Bot.new({:coords => @board[0,0]})
   slim :index
 end
