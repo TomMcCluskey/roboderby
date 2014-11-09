@@ -9,6 +9,7 @@ html
     - if @board
       table#board
         - for row in @board.space
-          tr
+          <tr>
           - for square in row
-            td class=square.type class=square.walls
+            td class=square.type class=square.walls id="x#{square.x}y#{square.y}"
+          </tr>
