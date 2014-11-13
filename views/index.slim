@@ -18,7 +18,7 @@ html
         - for row in @board.space
           <tr>
           - for square in row
-            <td class=#{square.type} class=#{square.walls} id="x#{square.x}y#{square.y}">
+            <td class="#{square.type} face#{square.facing} wall#{square.walls}" id="x#{square.x}y#{square.y}">
             - if square.occupier
               <img src="images/arrow.png" class="face#{square.occupier.facing}" />
             </td>

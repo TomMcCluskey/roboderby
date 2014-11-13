@@ -14,7 +14,7 @@ class Board
     board['rows'].each do |data_row|
       row = []
       data_row.each do |cell|
-        square = Square.new({'type' => cell['type'], 'walls' => cell['walls']})
+        square = Square.new({'type' => cell['type'], 'facing' => cell['facing'], 'walls' => cell['walls']})
         square.x = x
         square.y = y
         row.push square
@@ -94,9 +94,10 @@ end
 class Square
 
   # Example Square: Square.new( {type => :gear, walls => [ :north, :south ]} )
-  attr_reader :type, :occupier, :x, :y, :walls
+  attr_reader :type, :facing, :occupier, :x, :y, :walls
   def initialize(args)
     @type = args['type'] || 'empty'
+    @facing = args['facing']
     @walls = args['walls'] || []
     @occupier = nil
   end

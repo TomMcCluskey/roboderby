@@ -1041,7 +1041,7 @@
       },
       {
         "type": "slow_conveyor",
-        "facing": "0",
+        "facing": "3",
         "walls": "",
         "invisibles": {
           "laser": "2",
@@ -1052,7 +1052,7 @@
       },
       {
         "type": "slow_conveyor",
-        "facing": "0",
+        "facing": "3",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1063,7 +1063,7 @@
       },
       {
         "type": "slow_conveyor",
-        "facing": "0",
+        "facing": "3",
         "walls": [],
         "invisibles": {
           "laser": "",

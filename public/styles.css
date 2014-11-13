@@ -12,48 +12,79 @@ td {
   width: 75px;
   height: 75px;
   background-size: 75px;
+  position: relative;
 }
-td.empty {
+td:before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 0px;
+  background-size: contain;
+  z-index: -1;
+}
+td.empty:before {
   background-image: url('images/empty.png');
 }
-td.wrench1 {
+td.wrench1:before {
   background-image: url('images/wrench1.png');
 }
-td.wrench2 {
+td.wrench2:before {
   background-image: url('images/wrench2.png');
 }
-td.slow_conveyor {
+td.slow_conveyor:before {
   background-image: url('images/slow_conveyor.png');
 }
-td.start_slow_conveyor {
+td.start_slow_conveyor:before {
   background-image: url('images/start_slow_conveyor.png');
 }
-td.fast_conveyor {
+td.fast_conveyor:before {
   background-image: url('images/fast_conveyor.png');
 }
-td.y_slow_conveyor {
+td.y_slow_conveyor:before {
   background-image: url('images/y_slow_conveyor.png');
 }
-td.y_fast_conveyor {
+td.y_fast_conveyor:before {
   background-image: url('images/y_fast_conveyor.png');
 }
-td.l_slow_conveyor {
+td.l_slow_conveyor:before {
   background-image: url('images/l_slow_conveyor.png');
 }
-td.l_fast_conveyor {
+td.l_fast_conveyor:before {
   background-image: url('images/l_fast_conveyor.png');
 }
-td.r_slow_conveyor {
+td.r_slow_conveyor:before {
   background-image: url('images/r_slow_conveyor.png');
 }
-td.r_fast_conveyor {
+td.r_fast_conveyor:before {
   background-image: url('images/r_fast_conveyor.png');
 }
-td.l_merge_slow_conveyor {
+td.l_merge_slow_conveyor:before {
   background-image: url('images/l_merge_slow_conveyor.png');
 }
-td.l_merge_fast_conveyor {
+td.l_merge_fast_conveyor:before {
   background-image: url('images/l_merge_fast_conveyor.png');
+}
+.face1:before {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.face2:before {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.face3:before {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 img.face0 {
   max-width: 55px;
