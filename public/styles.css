@@ -49,6 +49,12 @@ td.r_slow_conveyor {
 td.r_fast_conveyor {
   background-image: url('images/r_fast_conveyor.png');
 }
+td.l_merge_slow_conveyor {
+  background-image: url('images/l_merge_slow_conveyor.png');
+}
+td.l_merge_fast_conveyor {
+  background-image: url('images/l_merge_fast_conveyor.png');
+}
 img.face0 {
   max-width: 55px;
   margin: -27px 0px 0px 10px;

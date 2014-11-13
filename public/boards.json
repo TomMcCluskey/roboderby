@@ -13,7 +13,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -24,7 +24,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -52,7 +52,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -81,7 +81,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -92,7 +92,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -121,7 +121,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -149,7 +149,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -160,7 +160,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       }
@@ -173,7 +173,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -184,7 +184,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -195,7 +195,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -206,7 +206,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -217,7 +217,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -228,7 +228,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -239,7 +239,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -250,7 +250,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -261,7 +261,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -272,7 +272,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -283,7 +283,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -294,7 +294,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       }
@@ -324,7 +324,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -335,7 +335,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -346,7 +346,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -357,7 +357,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -368,7 +368,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -379,7 +379,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -390,7 +390,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -401,7 +401,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -412,7 +412,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -423,7 +423,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -453,7 +453,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -464,7 +464,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -475,7 +475,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -486,7 +486,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -497,18 +497,18 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
       {
         "type": "slow_conveyor",
         "facing": "1",
-        "walls": [0],
+        "walls": "",
         "invisibles": {
           "laser": "0",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -519,7 +519,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -530,7 +530,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -541,7 +541,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -552,7 +552,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -563,7 +563,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -574,7 +574,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       }
@@ -599,7 +599,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -610,7 +610,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -621,7 +621,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -632,7 +632,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -643,7 +643,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -654,7 +654,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -665,7 +665,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -676,7 +676,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -687,7 +687,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -698,7 +698,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -717,13 +717,257 @@
     ],
       [
       {
-        "type": "empty",
+        "type": "start_slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "r_slow_conveyor",
+        "facing": "1",
+        "walls": "",
+        "invisibles": {
+          "laser": "3",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "pit",
         "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "pit",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "2",
+        "walls": ["1"],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "l_merge_slow_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      }
+    ],
+      [
+      {
+        "type": "fast_conveyor",
+        "facing": "1",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "l_merge_fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "0",
+        "walls": "",
+        "invisibles": {
+          "laser": "3",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "pit",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "pit",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "r_fast_conveyor",
+        "facing": "3",
+        "walls": ["1"],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -734,117 +978,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       }
@@ -857,7 +991,117 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "3", "phases": ["1","3","5"] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "r_slow_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "0",
+        "walls": "",
+        "invisibles": {
+          "laser": "2",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "r_slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -868,7 +1112,130 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "1", "phases": ["1","3","5"] }
+        },
+        "special": ""
+      }
+    ],
+      [
+      {
+        "type": "wrench2",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "r_fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "2",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "r_fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -879,106 +1246,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       }
@@ -991,7 +1259,117 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "3", "phases": ["2","4"] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "r_slow_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "r_slow_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -1002,7 +1380,130 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "3", "phases": ["2","4"] }
+        },
+        "special": ""
+      }
+    ],
+      [
+      {
+        "type": "fast_conveyor",
+        "facing": "1",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "y_fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "l_merge_fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "l_fast_conveyor",
+        "facing": "3",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -1013,106 +1514,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       }
@@ -1125,7 +1527,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -1136,7 +1538,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -1147,7 +1549,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "2", "phases": ["2", "4"] }
         },
         "special": ""
       },
@@ -1158,7 +1560,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -1169,7 +1571,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "2", "phases": ["1","3","5"] }
         },
         "special": ""
       },
@@ -1180,7 +1582,18 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -1191,7 +1604,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "2", "phases": ["1","3","5"] }
         },
         "special": ""
       },
@@ -1202,7 +1615,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
@@ -1213,442 +1626,29 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "2", "phases": ["2","4"] }
         },
         "special": ""
       },
       {
-        "type": "empty",
-        "facing": "",
+        "type": "fast_conveyor",
+        "facing": "0",
         "walls": [],
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       },
       {
-        "type": "empty",
+        "type": "wrench1",
         "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      }
-    ],
-      [
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      }
-    ],
-      [
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      }
-    ],
-      [
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "facing": "",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
+          "pusher": { "side": "", "phases": [] }
         },
         "special": ""
       }
