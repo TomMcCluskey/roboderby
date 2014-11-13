@@ -504,9 +504,9 @@
       {
         "type": "slow_conveyor",
         "facing": "1",
-        "walls": "",
+        "walls": ["0"],
         "invisibles": {
-          "laser": "0",
+          "laser": "",
           "crusher": "",
           "pusher": { "side": "", "phases": [] }
         },

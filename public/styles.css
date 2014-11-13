@@ -118,3 +118,30 @@ img.face3 {
   -o-transform: rotate(270deg);
   transform: rotate(270deg);
 }
+img.laser, img.wall{
+  max-width: 75px;
+  position: absolute;
+}
+.side0 {
+  top: 0px;
+}
+.side1 {
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: -31px;
+  top: 30px;
+}
+.side2 {
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  bottom: 0px;
+}
+.side3 {
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  top: 25px;
+  left: -25px;
+}

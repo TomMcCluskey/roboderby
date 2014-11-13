@@ -21,5 +21,10 @@ html
             <td class="#{square.type} face#{square.facing} wall#{square.walls}" id="x#{square.x}y#{square.y}">
             - if square.occupier
               <img src="images/arrow.png" class="face#{square.occupier.facing}" />
+            - if square.laser != ""
+              <img src="images/laser.png" class="laser side#{square.laser}" />
+            - if square.walls != ""
+              - for wall in square.walls
+                <img src="images/wall.png" class="wall side#{wall}" />
             </td>
           </tr>
