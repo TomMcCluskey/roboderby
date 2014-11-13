@@ -8,6 +8,7 @@
       [
       {
         "type": "wrench1",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -17,7 +18,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor2",
+        "type": "slow_conveyor",
+        "facing": "2",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -28,6 +30,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -44,6 +47,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -54,6 +58,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -70,7 +75,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor2",
+        "type": "slow_conveyor",
+        "facing": "2",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -80,7 +86,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor0",
+        "type": "start_slow_conveyor",
+        "facing": "0",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -91,6 +98,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -108,6 +116,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -118,6 +127,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -134,6 +144,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -144,6 +155,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -156,6 +168,7 @@
       [
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -165,7 +178,8 @@
         "special": ""
       },
       {
-        "type": "l_slow_conveyor1",
+        "type": "l_slow_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -175,7 +189,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor1",
+        "type": "slow_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -185,7 +200,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor1",
+        "type": "slow_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -195,7 +211,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor1",
+        "type": "slow_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -205,7 +222,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor1",
+        "type": "slow_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -215,7 +233,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor1",
+        "type": "slow_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -225,7 +244,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor1",
+        "type": "slow_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -235,7 +255,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor1",
+        "type": "slow_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -245,7 +266,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor1",
+        "type": "slow_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -255,7 +277,8 @@
         "special": ""
       },
       {
-        "type": "y_slow_conveyor2",
+        "type": "y_slow_conveyor",
+        "facing": "2",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -265,7 +288,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor3",
+        "type": "slow_conveyor",
+        "facing": "3",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -278,6 +302,7 @@
       [
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -286,14 +311,15 @@
             "side": "3",
             "phases": [
               "2",
-              "4"
-            ]
+            "4"
+              ]
           }
         },
         "special": ""
       },
       {
-        "type": "r_fast_conveyor1",
+        "type": "r_fast_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -303,7 +329,8 @@
         "special": ""
       },
       {
-        "type": "fast_conveyor1",
+        "type": "fast_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -313,7 +340,8 @@
         "special": ""
       },
       {
-        "type": "fast_conveyor1",
+        "type": "fast_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -323,7 +351,8 @@
         "special": ""
       },
       {
-        "type": "fast_conveyor1",
+        "type": "fast_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -333,7 +362,8 @@
         "special": ""
       },
       {
-        "type": "fast_conveyor1",
+        "type": "fast_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -343,7 +373,8 @@
         "special": ""
       },
       {
-        "type": "fast_conveyor1",
+        "type": "fast_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -353,7 +384,8 @@
         "special": ""
       },
       {
-        "type": "fast_conveyor1",
+        "type": "fast_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -363,7 +395,8 @@
         "special": ""
       },
       {
-        "type": "fast_conveyor1",
+        "type": "fast_conveyor",
+        "facing": "1",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -373,7 +406,8 @@
         "special": ""
       },
       {
-        "type": "r_fast_conveyor2",
+        "type": "r_fast_conveyor",
+        "facing": "2",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -383,7 +417,8 @@
         "special": ""
       },
       {
-        "type": "slow_conveyor2",
+        "type": "slow_conveyor",
+        "facing": "2",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -394,6 +429,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -402,8 +438,8 @@
             "side": "1",
             "phases": [
               "2",
-              "4"
-            ]
+            "4"
+              ]
           }
         },
         "special": ""
@@ -412,6 +448,117 @@
       [
       {
         "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "r_slow_conveyor",
+        "facing": "1",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "1",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "1",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "1",
+        "walls": [0],
+        "invisibles": {
+          "laser": "0",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "1",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "1",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "r_slow_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "2",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -422,228 +569,7 @@
       },
       {
         "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      }
-    ],
-      [
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -656,6 +582,118 @@
       [
       {
         "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {"side": "3",
+            "phases": ["1","3","5"]}
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "0",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "r_fast_conveyor",
+        "facing": "1",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "1",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "1",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "1",
+        "walls": ["0"],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "r_fast_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "fast_conveyor",
+        "facing": "2",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "slow_conveyor",
+        "facing": "2",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -666,6 +704,21 @@
       },
       {
         "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {"side": "1",
+          "phases": ["1","3","5"]}
+        },
+        "special": ""
+      }
+    ],
+      [
+      {
+        "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -676,6 +729,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -686,6 +740,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -696,6 +751,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -706,6 +762,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -716,6 +773,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -726,6 +784,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -736,6 +795,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -746,6 +806,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -756,6 +817,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -766,6 +828,18 @@
       },
       {
         "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -778,6 +852,7 @@
       [
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -788,6 +863,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -798,6 +874,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -808,6 +885,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -818,6 +896,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -828,6 +907,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -838,6 +918,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -848,6 +929,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -858,6 +940,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -868,6 +951,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -878,6 +962,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -888,128 +973,7 @@
       },
       {
         "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      }
-    ],
-      [
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
-        "walls": [],
-        "invisibles": {
-          "laser": "",
-          "crusher": "",
-          "pusher": {}
-        },
-        "special": ""
-      },
-      {
-        "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1022,6 +986,7 @@
       [
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1032,6 +997,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1042,6 +1008,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1052,6 +1019,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1062,6 +1030,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1072,6 +1041,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1082,6 +1052,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1092,6 +1063,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1102,6 +1074,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1112,6 +1085,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1122,6 +1096,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1132,6 +1107,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1144,6 +1120,7 @@
       [
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1154,6 +1131,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1164,6 +1142,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1174,6 +1153,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1184,6 +1164,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1194,6 +1175,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1204,6 +1186,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1214,6 +1197,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1224,6 +1208,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1234,6 +1219,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1244,6 +1230,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1254,6 +1241,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1266,6 +1254,7 @@
       [
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1276,6 +1265,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1286,6 +1276,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1296,6 +1287,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1306,6 +1298,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1316,6 +1309,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1326,6 +1320,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1336,6 +1331,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1346,6 +1342,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1356,6 +1353,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1366,6 +1364,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1376,6 +1375,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1388,6 +1388,7 @@
       [
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1398,6 +1399,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1408,6 +1410,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1418,6 +1421,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1428,6 +1432,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1438,6 +1443,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1448,6 +1454,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1458,6 +1465,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1468,6 +1476,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1478,6 +1487,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1488,6 +1498,7 @@
       },
       {
         "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",
@@ -1498,6 +1509,141 @@
       },
       {
         "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      }
+    ],
+      [
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
+        "walls": [],
+        "invisibles": {
+          "laser": "",
+          "crusher": "",
+          "pusher": {}
+        },
+        "special": ""
+      },
+      {
+        "type": "empty",
+        "facing": "",
         "walls": [],
         "invisibles": {
           "laser": "",

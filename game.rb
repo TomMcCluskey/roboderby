@@ -1,15 +1,22 @@
+require 'json'
+
 class Board
+  attr_reader :lasers
   attr_accessor :space
-  def initialize(cols=12, rows=12)
+
+  def initialize(board_name='maelstrom')
+    #new initialize
+    board = JSON.parse(File.read('public/boards.json'))[board_name]
     @space = []
+    @lasers = []
     y = 0
     x = 0
-    rows.times do
+    board['rows'].each do |data_row|
       row = []
-      cols.times do
-        square = Square.new({:type => 'empty'})
-        square.y = y
+      data_row.each do |cell|
+        square = Square.new({'type' => cell['type'], 'walls' => cell['walls']})
         square.x = x
+        square.y = y
         row.push square
         x += 1
       end
@@ -101,8 +108,10 @@ class Square
       when 'empty'            then '_'
       when 'gear'             then '*'
       when 'pit'              then '0'
-      when 'conveyor'         then '-'
-      when 'double_conveyor'  then '='
+      when 'slow_conveyor'         then '-'
+      when 'fast_conveyor'  then '='
+      when 'wrench1'          then '/'
+      when 'wrench2'          then 'X'
       when 'water'            then '~'
       else '?'
       end
@@ -146,6 +155,9 @@ class Bot
     @facing = args[:facing] || 0
     @coords = args[:coords]
     @coords.occupier = self
+    @damage = 0
+    @register = [] #holds move cards
+    @max_hand = 9
   end
 
   def to_s
@@ -156,6 +168,10 @@ class Bot
     when 3 then '<'
     else '?'
     end
+  end
+
+  def execute(phase)
+    #executes register phases
   end
 
   def turn_right
@@ -171,7 +187,9 @@ class Bot
   end
 
   def take_damage(amount=1)
-
+    @damage += amount
+    @max_hand -= amount
+    # also lock registers, check for destruction
   end
 
   def shoot(laser=true)
@@ -182,13 +200,45 @@ class Bot
 
   end
 
+  def fill_hand
+    # gets called by Turn, calls Deck with # of cards needed
+  end
+
 end
 
-class Move_card
+class Deck
+
+  def initialize
+    deck_data = File.read("moves.json")
+    @cards = JSON.parse(deck_data)
+    self.shuffle
+  end
+
+  def shuffle
+    @cards.shuffle!
+  end
+
+end
+
+class Game
+
+  def initialize(args)
+    # master object
+    @bots = args['bots']
+    @deck = new Deck
+    @board = args['board']
+    @winner = nil
+    take_turn
+  end
+  
+  def take_turn
+    # replaces the unneccesary Turn class
+  end
 
 end
 
 # board = Board.new
+# puts board
 # twonky = Bot.new({:coords => board[0,0]})
 # twitch = Bot.new({:coords => board[5,3], :facing => 2})
 # twonky.turn_right
