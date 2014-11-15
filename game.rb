@@ -157,7 +157,7 @@ end
 
 class Bot
   attr_reader :facing
-  attr_accessor :coords
+  attr_accessor :coords, :hand
   def initialize(args)
     @facing = args[:facing] || 0
     @coords = args[:coords]
@@ -165,6 +165,7 @@ class Bot
     @damage = 0
     @register = [] #holds move cards
     @max_hand = 9
+    @hand = []
   end
 
   def to_s
@@ -178,7 +179,19 @@ class Bot
   end
 
   def execute(phase)
-    #executes register phases
+    case @register[phase]
+    when 'Rotate Left' then self.turn_left
+    when 'Rotate Right' then self.turn_right
+    when 'U Turn' then self.u_turn
+    when 'Move 1' then #currently move is in Board
+    when 'Move 2' then #currently move is in Board
+    when 'Move 3' then #currently move is in Board
+    when 'Back Up' then #currently move is in Board
+    end
+  end
+
+  def get_cards(deck)
+    (@max_hand - @hand.length).times { deck.draw(self) }
   end
 
   def turn_right
@@ -214,15 +227,26 @@ class Bot
 end
 
 class Deck
+  attr_reader :cards
 
   def initialize
-    deck_data = File.read("moves.json")
-    @cards = JSON.parse(deck_data)
+    @cards = []
+    deck_data = File.read("public/moves.json")
+    counter = 10
+    JSON.parse(deck_data).each do |cardname|
+      card = { sequence: counter, value: cardname }
+      @cards.push card
+      counter += 10
+    end
     self.shuffle
   end
 
   def shuffle
     @cards.shuffle!
+  end
+
+  def draw(bot)
+    bot.hand.push(@cards.pop)
   end
 
 end
@@ -244,9 +268,12 @@ class Game
 
 end
 
+# moves = Deck.new
 # board = Board.new
 # puts board
 # twonky = Bot.new({:coords => board[0,0]})
+# twonky.get_cards(moves)
+# puts twonky.hand
 # twitch = Bot.new({:coords => board[5,3], :facing => 2})
 # twonky.turn_right
 # twitch.u_turn
