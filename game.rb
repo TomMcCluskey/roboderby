@@ -14,10 +14,11 @@ class Board
     board['rows'].each do |data_row|
       row = []
       data_row.each do |cell|
-        square = Square.new({'type' => cell['type'],
-                             'facing' => cell['facing'],
-                             'walls' => cell['walls'],
-                             'laser' => cell['invisibles']['laser']})
+        square = Square.new({type: cell['type'],
+                             facing: cell['facing'],
+                             walls: cell['walls'],
+                             laser: cell['invisibles']['laser'],
+                             pusher: cell['invisibles']['pusher']})
         square.x = x
         square.y = y
         row.push square
@@ -97,13 +98,14 @@ end
 class Square
 
   # Example Square: Square.new( {type => :gear, walls => [ :north, :south ]} )
-  attr_reader :type, :facing, :occupier, :x, :y, :walls, :laser
+  attr_reader :type, :facing, :occupier, :x, :y, :walls, :laser, :pusher
   def initialize(args)
-    @type = args['type'] || 'empty'
-    @facing = args['facing']
-    @walls = args['walls'] || []
+    @type = args[:type] || 'empty'
+    @facing = args[:facing] || 0
+    @walls = args[:walls] || []
     @occupier = nil
-    @laser = args['laser']
+    @laser = args[:laser] || nil
+    @pusher = args[:pusher] || nil
   end
 
   # just in case you want to play roborally on the command line, I guess
@@ -113,8 +115,8 @@ class Square
       when 'empty'            then '_'
       when 'gear'             then '*'
       when 'pit'              then '0'
-      when 'slow_conveyor'         then '-'
-      when 'fast_conveyor'  then '='
+      when 'slow_conveyor'    then '-'
+      when 'fast_conveyor'    then '='
       when 'wrench1'          then '/'
       when 'wrench2'          then 'X'
       when 'water'            then '~'

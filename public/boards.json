@@ -13,7 +13,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -24,7 +24,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -37,10 +37,7 @@
           "crusher": "",
           "pusher": {
             "side": "0",
-            "phases": [
-              "2",
-            "4"
-              ]
+            "phases": "even"
           }
         },
         "special": ""
@@ -52,7 +49,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -65,11 +62,7 @@
           "crusher": "",
           "pusher": {
             "side": "0",
-            "phases": [
-              "1",
-            "3",
-            "5"
-              ]
+            "phases": "odd"
           }
         },
         "special": ""
@@ -81,7 +74,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -92,7 +85,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -105,11 +98,7 @@
           "crusher": "",
           "pusher": {
             "side": "0",
-            "phases": [
-              "1",
-            "3",
-            "5"
-              ]
+            "phases": "odd"
           }
         },
         "special": ""
@@ -121,7 +110,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -134,10 +123,7 @@
           "crusher": "",
           "pusher": {
             "side": "0",
-            "phases": [
-              "2",
-            "4"
-              ]
+            "phases": "even"
           },
           "special": ""
         }
@@ -149,7 +135,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -160,7 +146,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       }
@@ -173,7 +159,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -184,7 +170,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -195,7 +181,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -206,7 +192,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -217,7 +203,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -228,7 +214,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -239,7 +225,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -250,7 +236,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -261,7 +247,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -272,7 +258,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -283,7 +269,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -294,7 +280,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       }
@@ -309,10 +295,7 @@
           "crusher": "",
           "pusher": {
             "side": "3",
-            "phases": [
-              "2",
-            "4"
-              ]
+            "phases": "even"
           }
         },
         "special": ""
@@ -324,7 +307,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -335,7 +318,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -346,7 +329,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -357,7 +340,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -368,7 +351,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -379,7 +362,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -390,7 +373,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -401,7 +384,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -412,7 +395,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -423,7 +406,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -436,10 +419,7 @@
           "crusher": "",
           "pusher": {
             "side": "1",
-            "phases": [
-              "2",
-            "4"
-              ]
+            "phases": "even"
           }
         },
         "special": ""
@@ -453,7 +433,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -464,7 +444,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -475,7 +455,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -486,7 +466,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -497,7 +477,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -508,7 +488,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -519,7 +499,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -530,7 +510,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -541,7 +521,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -552,7 +532,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -563,7 +543,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -574,7 +554,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       }
@@ -588,7 +568,7 @@
           "laser": "",
           "crusher": "",
           "pusher": {"side": "3",
-            "phases": ["1","3","5"]}
+            "phases": "odd"}
         },
         "special": ""
       },
@@ -599,7 +579,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -610,7 +590,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -621,7 +601,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -632,7 +612,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -643,7 +623,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -654,7 +634,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -665,7 +645,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -676,7 +656,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -687,7 +667,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -698,7 +678,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -710,7 +690,7 @@
           "laser": "",
           "crusher": "",
           "pusher": {"side": "1",
-          "phases": ["1","3","5"]}
+          "phases": "odd"}
         },
         "special": ""
       }
@@ -723,7 +703,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -734,7 +714,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -745,7 +725,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -756,7 +736,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -767,7 +747,7 @@
         "invisibles": {
           "laser": "3",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -778,7 +758,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -789,7 +769,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -800,7 +780,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -811,7 +791,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -822,7 +802,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -833,7 +813,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -844,7 +824,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       }
@@ -857,7 +837,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -868,7 +848,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -879,7 +859,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -890,7 +870,7 @@
         "invisibles": {
           "laser": "3",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -901,7 +881,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -912,7 +892,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -923,7 +903,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -934,7 +914,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -945,7 +925,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -956,7 +936,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -967,7 +947,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -978,7 +958,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       }
@@ -991,7 +971,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "3", "phases": ["1","3","5"] }
+          "pusher": { "side": "3", "phases": "odd" }
         },
         "special": ""
       },
@@ -1002,7 +982,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1013,7 +993,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1024,7 +1004,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1035,7 +1015,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1046,7 +1026,7 @@
         "invisibles": {
           "laser": "2",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1057,7 +1037,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1068,7 +1048,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1079,7 +1059,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1090,7 +1070,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1101,7 +1081,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1112,7 +1092,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "1", "phases": ["1","3","5"] }
+          "pusher": { "side": "1", "phases": "odd" }
         },
         "special": ""
       }
@@ -1125,7 +1105,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1136,7 +1116,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1147,7 +1127,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1158,7 +1138,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1169,7 +1149,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1180,7 +1160,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1191,7 +1171,7 @@
         "invisibles": {
           "laser": "2",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1202,7 +1182,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1213,7 +1193,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1224,7 +1204,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1235,7 +1215,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1246,7 +1226,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       }
@@ -1259,7 +1239,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "3", "phases": ["2","4"] }
+          "pusher": { "side": "3", "phases": "even" }
         },
         "special": ""
       },
@@ -1270,7 +1250,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1281,7 +1261,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1292,7 +1272,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1303,7 +1283,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1314,7 +1294,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1325,7 +1305,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1336,7 +1316,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1347,7 +1327,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1358,7 +1338,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1369,7 +1349,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1380,7 +1360,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "3", "phases": ["2","4"] }
+          "pusher": { "side": "1", "phases": "even" }
         },
         "special": ""
       }
@@ -1393,7 +1373,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1404,7 +1384,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1415,7 +1395,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1426,7 +1406,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1437,7 +1417,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1448,7 +1428,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1459,7 +1439,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1470,7 +1450,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1481,7 +1461,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1492,7 +1472,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1503,7 +1483,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1514,7 +1494,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       }
@@ -1527,7 +1507,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1538,7 +1518,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1549,7 +1529,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "2", "phases": ["2", "4"] }
+          "pusher": { "side": "2", "phases": "even" }
         },
         "special": ""
       },
@@ -1560,7 +1540,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1571,7 +1551,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "2", "phases": ["1","3","5"] }
+          "pusher": { "side": "2", "phases": "odd" }
         },
         "special": ""
       },
@@ -1582,7 +1562,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1593,7 +1573,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1604,7 +1584,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "2", "phases": ["1","3","5"] }
+          "pusher": { "side": "2", "phases": "odd" }
         },
         "special": ""
       },
@@ -1615,7 +1595,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1626,7 +1606,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "2", "phases": ["2","4"] }
+          "pusher": { "side": "2", "phases": "even" }
         },
         "special": ""
       },
@@ -1637,7 +1617,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       },
@@ -1648,7 +1628,7 @@
         "invisibles": {
           "laser": "",
           "crusher": "",
-          "pusher": { "side": "", "phases": [] }
+          "pusher": { "side": "", "phases": "" }
         },
         "special": ""
       }

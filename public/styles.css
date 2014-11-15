@@ -13,6 +13,8 @@ td {
   height: 75px;
   background-size: 75px;
   position: relative;
+  text-align: left;
+  vertical-align: top;
 }
 td:before {
   content: "";
@@ -91,6 +93,7 @@ img.face0 {
   margin: -27px 0px 0px 10px;
   position: absolute;
   -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
 }
@@ -99,6 +102,7 @@ img.face1 {
   margin: -27px 0px 0px 10px;
   position: absolute;
   -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -107,6 +111,7 @@ img.face2 {
   margin: -27px 0px 0px 10px;
   position: absolute;
   -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -115,10 +120,11 @@ img.face3 {
   margin: -27px 0px 0px 10px;
   position: absolute;
   -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
   -o-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-img.laser, img.wall{
+img.laser, img.wall, img.pusher{
   max-width: 75px;
   position: absolute;
 }
@@ -129,19 +135,20 @@ img.laser, img.wall{
   -webkit-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
-  right: -31px;
-  top: 30px;
+  left: 0px;
+  top: 0px;
 }
 .side2 {
   -webkit-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-  bottom: 0px;
+  left: 0px;
+  top: 0px;
 }
 .side3 {
   -webkit-transform: rotate(270deg);
   -o-transform: rotate(270deg);
   transform: rotate(270deg);
-  top: 25px;
-  left: -25px;
+  top: 0px;
+  left: 0px;
 }

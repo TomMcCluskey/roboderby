@@ -18,11 +18,15 @@ html
         - for row in @board.space
           <tr>
           - for square in row
-            <td class="#{square.type} face#{square.facing} wall#{square.walls}" id="x#{square.x}y#{square.y}">
+            <td class="#{square.type} face#{square.facing}" id="x#{square.x}y#{square.y}">
             - if square.occupier
               <img src="images/arrow.png" class="face#{square.occupier.facing}" />
             - if square.laser != ""
               <img src="images/laser.png" class="laser side#{square.laser}" />
+            - if square.pusher["phases"] == "even"
+              <img src="images/pusher_even.png" class="pusher side#{square.pusher["side"]}" />
+            - if square.pusher["phases"] == "odd"
+              <img src="images/pusher_odd.png" class="pusher side#{square.pusher["side"]}" />
             - if square.walls != ""
               - for wall in square.walls
                 <img src="images/wall.png" class="wall side#{wall}" />
