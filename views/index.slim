@@ -6,13 +6,6 @@ html
 
   body
     h1 The Board
-    div#test_buttons
-      button#move1 Move 1
-      button#move2 Move 2
-      button#move3 Move 3
-      button#turn_left Turn Left
-      button#turn_right Turn Right
-      button#u_turn U Turn
     - if @board
       table#board
         - for row in @board.space

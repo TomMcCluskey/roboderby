@@ -126,7 +126,11 @@ class Square
       @occupier.to_s
     end
   end
-  
+
+  def inspect
+    "{type: #{@type}; facing: #{@facing}; walls: #{@walls}; occupier: #{@occupier}; laser: #{@laser}; pusher: #{@pusher}}"
+  end
+
   def x=(x)
     @x = x
   end
@@ -220,9 +224,16 @@ class Bot
 
   end
 
-  def fill_hand
-    # gets called by Turn, calls Deck with # of cards needed
+  def fill_hand(deck)
+    # gets called by Game, calls Deck with # of cards needed
+    (@max_hand - @hand.length).times do
+      @hand.push(deck.draw)
+    end
   end
+
+#  def program(choices)
+#    # take in an array of chosen cards & assign them to registers
+#  end
 
 end
 
@@ -245,8 +256,8 @@ class Deck
     @cards.shuffle!
   end
 
-  def draw(bot)
-    bot.hand.push(@cards.pop)
+  def draw
+    @cards.pop
   end
 
 end
@@ -255,23 +266,31 @@ class Game
 
   def initialize(args)
     # master object
-    @bots = args['bots']
-    @deck = new Deck
-    @board = args['board']
+    @bots = args[:bots]
+    @deck = Deck.new
+    @board = args[:board]
     @winner = nil
     take_turn
   end
-  
+
   def take_turn
     # replaces the unneccesary Turn class
+    @bots.each do |bot|
+      bot.fill_hand(@deck)
+      # bot.program(choices)
+      puts bot.hand
+    end
+    @winner = "Tom!"
+    take_turn unless @winner
   end
 
 end
 
-# moves = Deck.new
-# board = Board.new
+moves = Deck.new
+board = Board.new
 # puts board
-# twonky = Bot.new({:coords => board[0,0]})
+twonky = Bot.new({:coords => board[0,0]})
+game = Game.new({ bots: [twonky], board: board})
 # twonky.get_cards(moves)
 # puts twonky.hand
 # twitch = Bot.new({:coords => board[5,3], :facing => 2})
