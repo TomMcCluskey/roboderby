@@ -44,10 +44,10 @@ class Board
   end
 
   def move(args)
-    #this will take a bot, direction, and distance and move the bot
-    bot = args['bot']
-    direction = args['direction'] || bot.facing
-    distance = args['distance'] || 1
+    # sample call: move( {bot: self, direction: 1, distance: 2} )
+    bot = args[:bot]
+    direction = args[:direction] || bot.facing
+    distance = args[:distance] || 1
     distance.times do |move|
       start = bot.coords
       case direction
@@ -64,10 +64,24 @@ class Board
     end
   end
 
+  def turn(args)
+    # sample call: turn( {bot: self, direction: 'left'} )
+    direction = args[:direction]
+    bot = args[:bot]
+    case direction
+    when 'right'
+      bot.facing = (bot.facing + 1) % 4
+    when 'u_turn'
+      bot.facing = (bot.facing + 2) % 4
+    when 'left'
+      bot.facing = (bot.facing + 3) % 4
+    end
+  end
+
   def north_of(square)
     x = square.x
     y = square.y
-    self[x, y+1]
+    self[x, y-1]
   end
 
   def east_of(square)
@@ -80,7 +94,7 @@ class Board
     x = square.x
     y = square.y
     puts self[x, y-1]
-    self[x, y-1]
+    self[x, y+1]
   end
 
   def west_of(square)
@@ -170,6 +184,7 @@ class Bot
     @register = [] #holds move cards
     @max_hand = 9
     @hand = []
+    @board = args[:board] #this seems... suboptimal
   end
 
   def to_s
@@ -183,31 +198,21 @@ class Bot
   end
 
   def execute(phase)
-    case @register[phase]
-    when 'Rotate Left' then self.turn_left
-    when 'Rotate Right' then self.turn_right
-    when 'U Turn' then self.u_turn
-    when 'Move 1' then #currently move is in Board
-    when 'Move 2' then #currently move is in Board
-    when 'Move 3' then #currently move is in Board
-    when 'Back Up' then #currently move is in Board
+    phase -= 1
+    puts "phase #{phase}: #{@register[phase]}"
+    case @register[phase][:value]
+    when 'Rotate Left' then @board.turn({bot: self, direction: 'left'})
+    when 'Rotate Right' then @board.turn({bot: self, direction: 'right'})
+    when 'U Turn' then @board.turn({bot: self, direction: 'u_turn'})
+    when 'Move 1' then @board.move({bot: self})
+    when 'Move 2' then @board.move({bot: self, distance: 2})
+    when 'Move 3' then @board.move({bot: self, distance: 3})
+    when 'Back Up' then @board.move({bot: self, distance: 1, direction: (@facing + 2) % 4})
     end
   end
 
   def get_cards(deck)
     (@max_hand - @hand.length).times { deck.draw(self) }
-  end
-
-  def turn_right
-    @facing = (@facing + 1) % 4
-  end
-
-  def turn_left
-    @facing = (@facing + 3) % 4
-  end
-
-  def u_turn
-    @facing = (@facing + 2) % 4
   end
 
   def take_damage(amount=1)
@@ -231,9 +236,17 @@ class Bot
     end
   end
 
-#  def program(choices)
-#    # take in an array of chosen cards & assign them to registers
-#  end
+  def program
+    # take in an array of chosen cards & assign them to registers
+    # for now, this just plays random cards
+    (@max_hand >= 5 ? 5 : @max_hand).times do
+      @register.push(@hand.pop)
+    end
+  end
+
+  def facing= (direction)
+    @facing = direction
+  end
 
 end
 
@@ -266,6 +279,7 @@ class Game
 
   def initialize(args)
     # master object
+    @PHASE_COUNT = 5
     @bots = args[:bots]
     @deck = Deck.new
     @board = args[:board]
@@ -277,8 +291,13 @@ class Game
     # replaces the unneccesary Turn class
     @bots.each do |bot|
       bot.fill_hand(@deck)
-      # bot.program(choices)
-      puts bot.hand
+      bot.program
+    end
+    phase = 1
+    @PHASE_COUNT.times do
+      @bots.each { |bot| bot.execute(phase) } #testing only
+      phase += 1
+      puts @board
     end
     @winner = "Tom!"
     take_turn unless @winner
@@ -289,13 +308,11 @@ end
 moves = Deck.new
 board = Board.new
 # puts board
-twonky = Bot.new({:coords => board[0,0]})
+twonky = Bot.new({:coords => board[6,6], board: board})
+puts board
 game = Game.new({ bots: [twonky], board: board})
 # twonky.get_cards(moves)
 # puts twonky.hand
 # twitch = Bot.new({:coords => board[5,3], :facing => 2})
-# twonky.turn_right
-# twitch.u_turn
-# puts board
 # board.move({'bot' => twonky, 'distance' => 3})
 # puts board
