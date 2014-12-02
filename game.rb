@@ -93,7 +93,6 @@ class Board
   def south_of(square)
     x = square.x
     y = square.y
-    puts self[x, y-1]
     self[x, y+1]
   end
 
@@ -262,11 +261,14 @@ class Deck
       @cards.push card
       counter += 10
     end
-    self.shuffle
+    # self.shuffle
   end
 
   def shuffle
+    puts @cards
     @cards.shuffle!
+    puts "****************"
+    puts @cards
   end
 
   def draw
@@ -305,14 +307,20 @@ class Game
 
 end
 
-moves = Deck.new
-board = Board.new
-# puts board
-twonky = Bot.new({:coords => board[6,6], board: board})
-puts board
-game = Game.new({ bots: [twonky], board: board})
-# twonky.get_cards(moves)
-# puts twonky.hand
-# twitch = Bot.new({:coords => board[5,3], :facing => 2})
-# board.move({'bot' => twonky, 'distance' => 3})
-# puts board
+def go
+  moves = Deck.new
+  moves.shuffle
+  board = Board.new
+  # puts board
+  twonky = Bot.new({:coords => board[6,6], board: board})
+  # puts board
+  game = Game.new({ bots: [twonky], board: board})
+  game.take_turn
+  # twonky.get_cards(moves)
+  # puts twonky.hand
+  # twitch = Bot.new({:coords => board[5,3], :facing => 2})
+  # board.move({'bot' => twonky, 'distance' => 3})
+  # puts board
+end
+
+go
