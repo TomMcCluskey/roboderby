@@ -2,7 +2,11 @@ doctype html
 html
   head
   link href='/styles.css' rel='stylesheet' type='text/css'
-    title Roboderby!
+  script src="../js/underscore.js"
+  script src="../js/jquery-2.1.1.js"
+  script src="../js/backbone.js"
+  script src="../js/client.js"
+  title Roboderby!
 
   body
     h1 The Board
@@ -13,15 +17,18 @@ html
           - for square in row
             <td class="#{square.type} face#{square.facing}" id="x#{square.x}y#{square.y}">
             - if square.occupier
-              <img src="images/arrow.png" class="bot face#{square.occupier.facing}" />
+              <img src="../images/arrow.png" class="bot face#{square.occupier.facing}" />
             - if square.laser != ""
-              <img src="images/laser.png" class="laser face#{square.laser}" />
+              <img src="../images/laser.png" class="laser face#{square.laser}" />
             - if square.pusher["phases"] == "even"
-              <img src="images/pusher_even.png" class="pusher face#{square.pusher["side"]}" />
+              <img src="../images/pusher_even.png" class="pusher face#{square.pusher["side"]}" />
             - if square.pusher["phases"] == "odd"
-              <img src="images/pusher_odd.png" class="pusher face#{square.pusher["side"]}" />
+              <img src="../images/pusher_odd.png" class="pusher face#{square.pusher["side"]}" />
             - if square.walls != ""
               - for wall in square.walls
-                <img src="images/wall.png" class="wall face#{wall}" />
+                <img src="../images/wall.png" class="wall face#{wall}" />
             </td>
           </tr>
+    div#cards
+    div#register
+    div#buttons
