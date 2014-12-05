@@ -14,8 +14,10 @@ var testData = {
   ]
 };
 
-var numPhases = 5;
 var app = {};
+
+app.numPhases = 5;
+app.startingPhases = [];
 
 app.Card = Backbone.Model.extend ({ });
 
@@ -23,41 +25,51 @@ app.Phase = Backbone.Model.extend ({ });
 
 app.Hand = Backbone.Collection.extend ({
   model: app.Card,
-  comparator: 'sequence'
+  comparator: 'sequence' // Compares as string
 });
-
-app.hand = new app.Hand();
-
-var parseHand = function(handData) {
-  var parsedHand = [];
-  for ( var cardCounter = 0; cardCounter < handData.length; cardCounter++) {
-    var card = parseCard(handData[cardCounter]);
-    parsedHand.push(card);
-  }
-  console.log(parsedHand);
-  return parsedHand;
-};
-
-var parseCard = function(cardData) {
-  var seq = Object.keys(cardData)[0];
-  return { sequence: seq, move: cardData[seq] };
-};
 
 app.Register = Backbone.Collection.extend ({
   model: app.Phase,
   comparator: 'phaseNumber'
 });
 
-app.hand.add(parseHand(testData.hand));
+app.hand = new app.Hand();
+app.register = new app.Register();
+
+app.parseHand = function(handData) {
+  var parsedHand = [];
+  for ( var cardCounter = 0; cardCounter < handData.length; cardCounter++) {
+    var card = app.parseCard(handData[cardCounter]);
+    parsedHand.push(card);
+  }
+  return parsedHand;
+};
+
+app.parseCard = function(cardData) {
+  var seq = Object.keys(cardData)[0];
+  return { sequence: seq, move: cardData[seq] };
+};
+
+app.hand.add(app.parseHand(testData.hand));
+app.register.add(['empty', 'empty', 'empty', 'empty', 'empty']);
 
 app.CardView = Backbone.View.extend ({
   el: '#cards',
   events: '',
   initialize: function() {
     this.collection.on('remove', this.render, this);
+    this.render();
   },
   render: function() {
     var outputHtml = '';
+    var compiledTemplate = _.template('<div draggable="true" class="card"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
+    this.collection.models.forEach( function(model) {
+      var data = {};
+      data.sequence = model.get('sequence');
+      data.move = model.get('move');
+      outputHtml += compiledTemplate(data);
+    });
+    $(this.el).html(outputHtml);
   },
   addCard: function(cardData) {
     // Does it make sense to have this happen here? Seems like
@@ -72,12 +84,21 @@ app.CardView = Backbone.View.extend ({
 
 app.RegisterView = Backbone.View.extend ({
   el: '#register',
+  model: this.Phase,
   events: '',
   initialize: function() {
-    //
+    this.render();
   },
   render: function() {
-    //
+    var outputHtml = '';
+    var compiledTemplate = _.template('<div class="phase"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
+    this.collection.models.forEach( function(model) {
+      var data = {};
+      data.sequence = model.get('sequence');
+      data.move = model.get('move');
+      outputHtml += compiledTemplate(data);
+    });
+    $(this.el).html(outputHtml);
   },
   addCard: function() {
     //
@@ -97,13 +118,6 @@ app.ButtonsView = Backbone.View.extend ({
 
 $(function () {
   var hand = testData.hand;
-  cards = [];
-  //console.log(hand);
-  for (var regCount = 0; regCount < numPhases; regCount ++) {
-    // make a new CardView and add data to it
-    // This makes one View for the whole hand.
-    // We need one View per card in the hand.
-    cards.push(new app.CardView({collection: app.hand}));
-    //app.CardView.addCard(hand[regCount]);
-  }
+  var registerView = new app.RegisterView({collection: app.register});
+  var cardView = new app.CardView({collection: app.hand});
 } );

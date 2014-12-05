@@ -125,3 +125,34 @@ img.laser, img.wall, img.pusher{
   top: 0;
   left: 0;
 }
+#register {
+  float: left;
+  width: 900px;
+  margin: 15px auto;
+  text-align: center;
+  clear: both;
+  font-family: sans-serif;
+}
+#cards {
+  float: left;
+  width: 900px;
+  margin: 15px auto;
+  text-align: center;
+  clear: both;
+  background-color: lightgrey;
+  font-family: sans-serif;
+}
+.phase {
+  border: 1px solid black;
+  margin: 10px 15px;
+  float: left;
+  height: 125px;
+  width: 75px;
+}
+.card {
+  border: 1px solid blue;
+  margin: 10px 10px;
+  float: left;
+  height: 125px;
+  width: 75px;
+}
