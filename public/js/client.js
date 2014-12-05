@@ -55,7 +55,11 @@ app.register.add(['empty', 'empty', 'empty', 'empty', 'empty']);
 
 app.CardView = Backbone.View.extend ({
   el: '#cards',
-  events: '',
+  events: {
+    "dragstart .card": "dragCard",
+    "drop .card"     : "dropCard",
+    "dragover .card" : "overValid",
+  },
   initialize: function() {
     this.collection.on('remove', this.render, this);
     this.render();
@@ -72,13 +76,22 @@ app.CardView = Backbone.View.extend ({
     $(this.el).html(outputHtml);
   },
   addCard: function(cardData) {
-    // Does it make sense to have this happen here? Seems like
-    // this should be more for adding from drag/drops
-    // var seq = Object.keys(cardData)[0];
-    // this.collection.add({sequence: seq, move: cardData[seq]});
   },
-  dragCard: function() {
-    //
+  dragCard: function(dragEvent, data, clone, element) {
+    console.log(dragEvent);
+    var seq = ($(dragEvent.target).children().first().text());
+    var val = ($(dragEvent.target).children().last().text());
+    console.log("sequence: " + seq + "; move: " + val);
+  },
+  dropCard: function(card) {
+    var seq = ($(card.target).children().first().text());
+    var val = ($(card.target).children().last().text());
+    console.log("card dropped!");
+    console.log(card);
+  },
+  overValid: function() {
+    event.preventDefault();
+    console.log("good target!");
   }
 });
 
@@ -91,7 +104,7 @@ app.RegisterView = Backbone.View.extend ({
   },
   render: function() {
     var outputHtml = '';
-    var compiledTemplate = _.template('<div class="phase"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
+    var compiledTemplate = _.template('<div draggable="true" class="phase"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
     this.collection.models.forEach( function(model) {
       var data = {};
       data.sequence = model.get('sequence');
@@ -121,3 +134,6 @@ $(function () {
   var registerView = new app.RegisterView({collection: app.register});
   var cardView = new app.CardView({collection: app.hand});
 } );
+
+// Think we need individual views for each card after all, with associated models
+// and collections so we can, eg, this.collection.remove(this.model);
