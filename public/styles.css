@@ -26,46 +26,46 @@ td:before {
   background-size: contain;
   z-index: -1;
 }
-td.empty:before {
+.empty:before {
   background-image: url('images/empty.png');
 }
-td.wrench1:before {
+.wrench1:before {
   background-image: url('images/wrench1.png');
 }
-td.wrench2:before {
+.wrench2:before {
   background-image: url('images/wrench2.png');
 }
-td.slow_conveyor:before {
+.slow_conveyor:before {
   background-image: url('images/slow_conveyor.png');
 }
-td.start_slow_conveyor:before {
+.start_slow_conveyor:before {
   background-image: url('images/start_slow_conveyor.png');
 }
-td.fast_conveyor:before {
+.fast_conveyor:before {
   background-image: url('images/fast_conveyor.png');
 }
-td.y_slow_conveyor:before {
+.y_slow_conveyor:before {
   background-image: url('images/y_slow_conveyor.png');
 }
-td.y_fast_conveyor:before {
+.y_fast_conveyor:before {
   background-image: url('images/y_fast_conveyor.png');
 }
-td.l_slow_conveyor:before {
+.l_slow_conveyor:before {
   background-image: url('images/l_slow_conveyor.png');
 }
-td.l_fast_conveyor:before {
+.l_fast_conveyor:before {
   background-image: url('images/l_fast_conveyor.png');
 }
-td.r_slow_conveyor:before {
+.r_slow_conveyor:before {
   background-image: url('images/r_slow_conveyor.png');
 }
-td.r_fast_conveyor:before {
+.r_fast_conveyor:before {
   background-image: url('images/r_fast_conveyor.png');
 }
-td.l_merge_slow_conveyor:before {
+.l_merge_slow_conveyor:before {
   background-image: url('images/l_merge_slow_conveyor.png');
 }
-td.l_merge_fast_conveyor:before {
+.l_merge_fast_conveyor:before {
   background-image: url('images/l_merge_fast_conveyor.png');
 }
 .face1:before {
@@ -155,4 +155,8 @@ img.laser, img.wall, img.pusher{
   float: left;
   height: 125px;
   width: 75px;
+}
+#buttons {
+  clear: both;
+  text-align: center;
 }

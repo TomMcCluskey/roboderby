@@ -88,7 +88,6 @@ app.CardView = Backbone.View.extend ({
     var val = ($(card.target).children().last().text());
     console.log("card dropped!");
     console.log(card);
-    // console.log(card);
   },
   overValid: function() {
     event.preventDefault();
@@ -105,10 +104,12 @@ app.RegisterView = Backbone.View.extend ({
   },
   render: function() {
     var outputHtml = '';
-    var compiledTemplate = _.template('<div class="phase" draggable="true"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
+    var compiledTemplate = _.template('<div class="phase" draggable="true" id="phase<%=phaseNum%>"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
     var data = {};
     data.sequence = this.model.get('sequence');
     data.move = this.model.get('move');
+    data.phaseNum = this.model.phaseNum;
+    console.log(this.model.phaseNum);
     outputHtml += compiledTemplate(data);
     $(this.el).append(outputHtml);
   },
@@ -121,10 +122,16 @@ app.ButtonsView = Backbone.View.extend ({
   el: '#buttons',
   events: '',
   initialize: function() {
-    //
+    var outputHtml = '';
+    if(JSON.parse(testData.poweredDown)) {
+      outputHtml = '<p>Waiting for other players while powered down</p>';
+    } else {
+      outputHtml = '<button id="standardMove">Go!</button><button id="powerDown">Power Down!</button>';
+    }
+    this.render(outputHtml);
   },
-  render: function() {
-    //
+  render: function(outputHtml) {
+    $(this.el).append(outputHtml);
   }
 });
 
@@ -132,12 +139,14 @@ $(function () {
   var hand = testData.hand;
   app.hand.models.forEach( function(model) {
     app.cardArray.push(new app.CardView( {model: model} ));
-    console.log('here!');
   });
+  var phaseNum = 0;
   app.register.models.forEach( function(model) {
+    model.phaseNum = phaseNum;
     app.regArray.push(new app.RegisterView( {model: model} ));
-    console.log('also here!');
+    phaseNum++;
   });
+  app.buttonView = new app.ButtonsView();
 } );
 
 // Think we need individual views for each card after all, with associated models
