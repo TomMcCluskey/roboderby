@@ -18,6 +18,8 @@ var app = {};
 
 app.numPhases = 5;
 app.startingPhases = [];
+app.cardArray = [];
+app.regArray = [];
 
 app.Card = Backbone.Model.extend ({ });
 
@@ -61,33 +63,32 @@ app.CardView = Backbone.View.extend ({
     "dragover .card" : "overValid",
   },
   initialize: function() {
-    this.collection.on('remove', this.render, this);
+    // this.collection.on('remove', this.render, this);
     this.render();
   },
   render: function() {
     var outputHtml = '';
-    var compiledTemplate = _.template('<div draggable="true" class="card"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
-    this.collection.models.forEach( function(model) {
-      var data = {};
-      data.sequence = model.get('sequence');
-      data.move = model.get('move');
-      outputHtml += compiledTemplate(data);
-    });
-    $(this.el).html(outputHtml);
+    var compiledTemplate = _.template('<div class="card" draggable="true"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
+    var data = {};
+    data.sequence = this.model.get('sequence');
+    data.move = this.model.get('move');
+    outputHtml += compiledTemplate(data);
+    $(this.el).append(outputHtml);
   },
   addCard: function(cardData) {
   },
   dragCard: function(dragEvent, data, clone, element) {
-    console.log(dragEvent);
     var seq = ($(dragEvent.target).children().first().text());
     var val = ($(dragEvent.target).children().last().text());
     console.log("sequence: " + seq + "; move: " + val);
+    console.log(dragEvent);
   },
   dropCard: function(card) {
     var seq = ($(card.target).children().first().text());
     var val = ($(card.target).children().last().text());
     console.log("card dropped!");
     console.log(card);
+    // console.log(card);
   },
   overValid: function() {
     event.preventDefault();
@@ -104,14 +105,12 @@ app.RegisterView = Backbone.View.extend ({
   },
   render: function() {
     var outputHtml = '';
-    var compiledTemplate = _.template('<div draggable="true" class="phase"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
-    this.collection.models.forEach( function(model) {
-      var data = {};
-      data.sequence = model.get('sequence');
-      data.move = model.get('move');
-      outputHtml += compiledTemplate(data);
-    });
-    $(this.el).html(outputHtml);
+    var compiledTemplate = _.template('<div class="phase" draggable="true"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
+    var data = {};
+    data.sequence = this.model.get('sequence');
+    data.move = this.model.get('move');
+    outputHtml += compiledTemplate(data);
+    $(this.el).append(outputHtml);
   },
   addCard: function() {
     //
@@ -131,8 +130,14 @@ app.ButtonsView = Backbone.View.extend ({
 
 $(function () {
   var hand = testData.hand;
-  var registerView = new app.RegisterView({collection: app.register});
-  var cardView = new app.CardView({collection: app.hand});
+  app.hand.models.forEach( function(model) {
+    app.cardArray.push(new app.CardView( {model: model} ));
+    console.log('here!');
+  });
+  app.register.models.forEach( function(model) {
+    app.regArray.push(new app.RegisterView( {model: model} ));
+    console.log('also here!');
+  });
 } );
 
 // Think we need individual views for each card after all, with associated models
