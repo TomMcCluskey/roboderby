@@ -150,7 +150,7 @@ img.laser, img.wall, img.pusher{
   width: 75px;
 }
 .card {
-  border: 10px solid blue;
+  border: 1px solid blue;
   margin: 10px 10px;
   float: left;
   height: 125px;

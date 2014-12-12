@@ -91,10 +91,10 @@ app.CardView = Backbone.View.extend ({
   events: {
     // these are problematic. Doing something to one card fires the appropriate
     // event on all cards.
-    "dragstart .card": "dragCard",
-    "drop .card"     : "dropCard",
-    "dragover .card" : "overValid",
-    "click .card"    : "clicked"
+    "dragstart": "dragCard",
+    "drop"     : "dropCard",
+    "dragover" : "overValid",
+    "click"    : "clicked"
   },
   initialize: function() {
     // this.collection.on('remove', this.render, this);
