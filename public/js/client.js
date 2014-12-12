@@ -55,20 +55,54 @@ app.parseCard = function(cardData) {
 app.hand.add(app.parseHand(testData.hand));
 app.register.add(['empty', 'empty', 'empty', 'empty', 'empty']);
 
-app.CardView = Backbone.View.extend ({
+app.HandView = Backbone.View.extend ({
   el: '#cards',
   events: {
+    //
+  },
+  initialize: function() {
+    this.childViews = [];
+    //
+  },
+  render: function() {
+    var self = this;
+    this.childViews.forEach(function (view){
+      view.remove();
+    });
+    this.childViews = [];
+
+    console.log(this.collection);
+    this.collection.each(function (item){
+      var cardView = new app.CardView({model: item});
+      cardView.render();
+      self.childViews.push(cardView.$el);
+    });
+    console.log(self.childViews);
+
+    this.childViews.forEach(function (item){
+      self.$el.append(item);
+    });
+  }
+});
+
+app.CardView = Backbone.View.extend ({
+  className: 'card',
+  attributes: {'draggable': 'true'},
+  events: {
+    // these are problematic. Doing something to one card fires the appropriate
+    // event on all cards.
     "dragstart .card": "dragCard",
     "drop .card"     : "dropCard",
     "dragover .card" : "overValid",
+    "click .card"    : "clicked"
   },
   initialize: function() {
     // this.collection.on('remove', this.render, this);
-    this.render();
+    // this.render(); // This will cause render to run twice on initialization
   },
   render: function() {
     var outputHtml = '';
-    var compiledTemplate = _.template('<div class="card" draggable="true"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
+    var compiledTemplate = _.template('<p class="sequence"><%=sequence%></p><p class="move"><%=move%></p>');
     var data = {};
     data.sequence = this.model.get('sequence');
     data.move = this.model.get('move');
@@ -92,6 +126,9 @@ app.CardView = Backbone.View.extend ({
   overValid: function() {
     event.preventDefault();
     console.log("good target!");
+  },
+  clicked: function() {
+    console.log(this.model.attributes);
   }
 });
 
@@ -109,7 +146,6 @@ app.RegisterView = Backbone.View.extend ({
     data.sequence = this.model.get('sequence');
     data.move = this.model.get('move');
     data.phaseNum = this.model.phaseNum;
-    console.log(this.model.phaseNum);
     outputHtml += compiledTemplate(data);
     $(this.el).append(outputHtml);
   },
@@ -137,9 +173,8 @@ app.ButtonsView = Backbone.View.extend ({
 
 $(function () {
   var hand = testData.hand;
-  app.hand.models.forEach( function(model) {
-    app.cardArray.push(new app.CardView( {model: model} ));
-  });
+  var handView = new app.HandView({collection: app.hand});
+  handView.render();
   var phaseNum = 0;
   app.register.models.forEach( function(model) {
     model.phaseNum = phaseNum;
