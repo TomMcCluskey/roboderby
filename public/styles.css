@@ -27,46 +27,46 @@ td:before {
   z-index: -1;
 }
 .empty:before {
-  background-image: url('images/empty.png');
+  background-image: url('../images/new.png');
 }
 .wrench1:before {
-  background-image: url('images/wrench1.png');
+  background-image: url('../images/wrench1.png');
 }
 .wrench2:before {
-  background-image: url('images/wrench2.png');
+  background-image: url('../images/wrench2.png');
 }
 .slow_conveyor:before {
-  background-image: url('images/slow_conveyor.png');
+  background-image: url('../images/slow_conveyor.png');
 }
 .start_slow_conveyor:before {
-  background-image: url('images/start_slow_conveyor.png');
+  background-image: url('../images/start_slow_conveyor.png');
 }
 .fast_conveyor:before {
-  background-image: url('images/fast_conveyor.png');
+  background-image: url('../images/fast_conveyor.png');
 }
 .y_slow_conveyor:before {
-  background-image: url('images/y_slow_conveyor.png');
+  background-image: url('../images/y_slow_conveyor.png');
 }
 .y_fast_conveyor:before {
-  background-image: url('images/y_fast_conveyor.png');
+  background-image: url('../images/y_fast_conveyor.png');
 }
 .l_slow_conveyor:before {
-  background-image: url('images/l_slow_conveyor.png');
+  background-image: url('../images/l_slow_conveyor.png');
 }
 .l_fast_conveyor:before {
-  background-image: url('images/l_fast_conveyor.png');
+  background-image: url('../images/l_fast_conveyor.png');
 }
 .r_slow_conveyor:before {
-  background-image: url('images/r_slow_conveyor.png');
+  background-image: url('../images/r_slow_conveyor.png');
 }
 .r_fast_conveyor:before {
-  background-image: url('images/r_fast_conveyor.png');
+  background-image: url('../images/r_fast_conveyor.png');
 }
 .l_merge_slow_conveyor:before {
-  background-image: url('images/l_merge_slow_conveyor.png');
+  background-image: url('../images/l_merge_slow_conveyor.png');
 }
 .l_merge_fast_conveyor:before {
-  background-image: url('images/l_merge_fast_conveyor.png');
+  background-image: url('../images/l_merge_fast_conveyor.png');
 }
 .face1:before {
   -webkit-transform: rotate(90deg);

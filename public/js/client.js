@@ -53,10 +53,92 @@ app.parseCard = function(cardData) {
 };
 
 app.hand.add(app.parseHand(testData.hand));
-app.register.add(['empty', 'empty', 'empty', 'empty', 'empty']);
+_(app.numPhases).times(function(){
+  app.register.add({sequence: 'empty', move: 'empty'});
+});
 
 app.HandView = Backbone.View.extend ({
   el: '#cards',
+  events: {
+    "drop": "dropCard",
+    "dragover" : "overValid",
+  },
+  initialize: function() {
+    this.childViews = [];
+    //
+  },
+  render: function() {
+    var self = this;
+    this.childViews.forEach(function (view){
+      view.remove();
+    });
+    this.childViews = [];
+    this.collection.each(function (item){
+      var cardView = new app.CardView({model: item});
+      cardView.render();
+      self.childViews.push(cardView.$el);
+    });
+    this.childViews.forEach(function (item){
+      self.$el.append(item);
+    });
+  },
+  overValid: function() {
+    event.preventDefault();
+    console.log("hand target!");
+  },
+  dropCard: function(card) {
+    var seq = ($(card.target).children().first().text());
+    var val = ($(card.target).children().last().text());
+    console.log("hand drop!");
+    console.log(card);
+  }
+});
+
+app.CardView = Backbone.View.extend ({
+  className: 'card',
+  attributes: {'draggable': 'true'},
+  events: {
+    // these are problematic. Doing something to one card fires the appropriate
+    // event on all cards.
+    "dragstart": "dragCard",
+    "dragend": "endCardDrag",
+    "click"    : "clicked"
+  },
+  initialize: function() {
+    // this.collection.on('remove', this.render, this);
+    // this.render(); // This will cause render to run twice on initialization
+  },
+  render: function() {
+    var outputHtml = '';
+    var compiledTemplate = _.template('<p class="sequence"><%=sequence%></p><p class="move"><%=move%></p>');
+    var data = {};
+    data.sequence = this.model.get('sequence');
+    data.move = this.model.get('move');
+    outputHtml += compiledTemplate(data);
+    $(this.el).append(outputHtml);
+  },
+  addCard: function(cardData) {
+  },
+  dragCard: function(dragEvent, data, clone, element) {
+    var seq = ($(dragEvent.target).children().first().text());
+    var val = ($(dragEvent.target).children().last().text());
+    dragEvent.originalEvent.dataTransfer.setData("text/plain", "seq:" + seq + " val:" + val);
+    console.log("sequence: " + seq + "; move: " + val);
+    console.log(dragEvent);
+  },
+  endCardDrag: function(card) {
+    //currentTarget.innerHtml
+    console.log(card.currentTarget);
+    console.log('drag end:');
+    console.log(card);
+  },
+  clicked: function() {
+    console.log(this.model.attributes);
+  }
+});
+
+app.RegisterView = Backbone.View.extend ({
+  el: '#register',
   events: {
     //
   },
@@ -70,23 +152,19 @@ app.HandView = Backbone.View.extend ({
       view.remove();
     });
     this.childViews = [];
-
-    console.log(this.collection);
     this.collection.each(function (item){
-      var cardView = new app.CardView({model: item});
+      var cardView = new app.PhaseView({model: item});
       cardView.render();
       self.childViews.push(cardView.$el);
     });
-    console.log(self.childViews);
-
     this.childViews.forEach(function (item){
       self.$el.append(item);
     });
   }
 });
 
-app.CardView = Backbone.View.extend ({
-  className: 'card',
+app.PhaseView = Backbone.View.extend ({
+  className: 'phase',
   attributes: {'draggable': 'true'},
   events: {
     // these are problematic. Doing something to one card fires the appropriate
@@ -114,43 +192,22 @@ app.CardView = Backbone.View.extend ({
   dragCard: function(dragEvent, data, clone, element) {
     var seq = ($(dragEvent.target).children().first().text());
     var val = ($(dragEvent.target).children().last().text());
+    dragEvent.data = "seq:" + seq + " val:" + val;
     console.log("sequence: " + seq + "; move: " + val);
     console.log(dragEvent);
   },
   dropCard: function(card) {
     var seq = ($(card.target).children().first().text());
     var val = ($(card.target).children().last().text());
-    console.log("card dropped!");
+    console.log("phase drop!");
     console.log(card);
   },
   overValid: function() {
     event.preventDefault();
-    console.log("good target!");
+    console.log("phase target!");
   },
   clicked: function() {
     console.log(this.model.attributes);
-  }
-});
-
-app.RegisterView = Backbone.View.extend ({
-  el: '#register',
-  model: this.Phase,
-  events: '',
-  initialize: function() {
-    this.render();
-  },
-  render: function() {
-    var outputHtml = '';
-    var compiledTemplate = _.template('<div class="phase" draggable="true" id="phase<%=phaseNum%>"><p class="sequence"><%=sequence%></p><p class="move"><%=move%></p></div>');
-    var data = {};
-    data.sequence = this.model.get('sequence');
-    data.move = this.model.get('move');
-    data.phaseNum = this.model.phaseNum;
-    outputHtml += compiledTemplate(data);
-    $(this.el).append(outputHtml);
-  },
-  addCard: function() {
-    //
   }
 });
 
@@ -176,11 +233,8 @@ $(function () {
   var handView = new app.HandView({collection: app.hand});
   handView.render();
   var phaseNum = 0;
-  app.register.models.forEach( function(model) {
-    model.phaseNum = phaseNum;
-    app.regArray.push(new app.RegisterView( {model: model} ));
-    phaseNum++;
-  });
+  var registerView = new app.RegisterView({collection: app.register});
+  registerView.render();
   app.buttonView = new app.ButtonsView();
 } );
 
