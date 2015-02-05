@@ -74,7 +74,6 @@ app.HandView = Backbone.View.extend ({
   },
   initialize: function() {
     this.childViews = [];
-    //
   },
   render: function() {
     var self = this;
@@ -127,31 +126,26 @@ app.CardView = Backbone.View.extend ({
   },
   addCard: function(cardData) {
   },
-  dragCard: function(dragEvent, data, clone, element) {
+  dragCard: function() {
     app.tempCard.sequence = this.model.get('sequence');
     app.tempCard.move = this.model.get('move');
   },
   endCardDrag: function(card) {
-    console.log('cardView drag end:');
     app.tempCard.sequence = undefined;
     app.tempCard.move = undefined;
     if (app.tempCard.validDrop) {
-      console.log('destroying card!');
       this.model.destroy();
     }
     this.parentView.render();
-    console.log(card);
   },
 });
 
 app.RegisterView = Backbone.View.extend ({
   el: '#register',
   events: {
-    //
   },
   initialize: function() {
     this.childViews = [];
-    //
   },
   render: function() {
     var self = this;
@@ -194,7 +188,7 @@ app.PhaseView = Backbone.View.extend ({
   },
   addCard: function(cardData) {
   },
-  dragCard: function(dragEvent, data, clone, element) {
+  dragCard: function() {
     app.tempPhase.move = this.model.get('move');
     app.tempPhase.sequence = this.model.get('sequence');
     app.tempPhase.validDrop = false;
@@ -214,39 +208,42 @@ app.PhaseView = Backbone.View.extend ({
     this.render();
   },
   dragEnd: function(card) {
-    console.log('cardView drag end:');
     app.tempPhase.sequence = undefined;
     app.tempPhase.move = undefined;
-    console.log(app.tempPhase);
     if (app.tempPhase.validDrop) {
-      console.log('destroying phase!');
       this.model.set({ sequence: undefined,
                        move: undefined });
     }
     this.parentView.render();
-    console.log(card);
   },
   overValid: function() {
     event.preventDefault();
   },
 });
 
-app.ButtonsView = Backbone.View.extend ({
-  el: '#buttons',
-  events: '',
-  initialize: function() {
-    var outputHtml = '';
-    if(JSON.parse(testData.poweredDown)) {
-      outputHtml = '<p>Waiting for other players while powered down</p>';
-    } else {
-      outputHtml = '<button id="standardMove">Go!</button><button id="powerDown">Power Down!</button>';
+app.goWatcher = function (registerView) {
+  $('#standardMove').click(function() {
+    function unplayed(phase) {
+      return !((phase.move !== undefined) && (phase.sequence !== undefined));
     }
-    this.render(outputHtml);
-  },
-  render: function(outputHtml) {
-    $(this.el).append(outputHtml);
-  }
-});
+    var moveSubmission = {};
+    moveSubmission.botNumber = testData.botNumber;
+    moveSubmission.poweredDown = testData.poweredDown;
+    moveSubmission.register = registerView.collection.toJSON();
+    if (moveSubmission.register.some(function(item) { 
+      return unplayed(item); } )) {
+      window.alert('You have unplayed phases!');
+      return;
+    }
+    console.log('turn done');
+  });
+};
+
+app.powerDownWatcher = function () {
+  $('#powerDown').click(function() {
+    console.log('Power down selected');
+  });
+};
 
 $(function () {
   var hand = testData.hand;
@@ -255,8 +252,6 @@ $(function () {
   var phaseNum = 0;
   var registerView = new app.RegisterView({collection: app.register});
   registerView.render();
-  app.buttonView = new app.ButtonsView();
+  app.goWatcher(registerView);
+  app.powerDownWatcher();
 } );
-
-// Think we need individual views for each card after all, with associated models
-// and collections so we can, eg, this.collection.remove(this.model);
