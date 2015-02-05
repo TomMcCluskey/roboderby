@@ -54,14 +54,23 @@ app.parseCard = function(cardData) {
 
 app.hand.add(app.parseHand(testData.hand));
 _(app.numPhases).times(function(){
-  app.register.add({sequence: 'empty', move: 'empty'});
+  app.register.add({sequence: undefined, move: undefined});
 });
+
+app.tempCard = {  sequence: undefined,
+                  move: undefined,
+                  validDrop: false};
+
+app.tempPhase = { sequence: undefined,
+                  move: undefined,
+                  validDrop: false};
 
 app.HandView = Backbone.View.extend ({
   el: '#cards',
   events: {
     "drop": "dropCard",
     "dragover" : "overValid",
+    "dragend" : "dragEnd",
   },
   initialize: function() {
     this.childViews = [];
@@ -75,6 +84,7 @@ app.HandView = Backbone.View.extend ({
     this.childViews = [];
     this.collection.each(function (item){
       var cardView = new app.CardView({model: item});
+      cardView.parentView = self;
       cardView.render();
       self.childViews.push(cardView.$el);
     });
@@ -84,29 +94,27 @@ app.HandView = Backbone.View.extend ({
   },
   overValid: function() {
     event.preventDefault();
-    console.log("hand target!");
   },
   dropCard: function(card) {
-    var seq = ($(card.target).children().first().text());
-    var val = ($(card.target).children().last().text());
-    console.log("hand drop!");
-    console.log(card);
-  }
+    app.tempCard.validDrop = true;
+    app.tempPhase.validDrop = true;
+    if (app.tempPhase.sequence) {
+      this.collection.add({move: app.tempPhase.move,
+                           sequence: app.tempPhase.sequence});
+    }
+    this.render();
+  },
 });
 
 app.CardView = Backbone.View.extend ({
   className: 'card',
   attributes: {'draggable': 'true'},
   events: {
-    // these are problematic. Doing something to one card fires the appropriate
-    // event on all cards.
     "dragstart": "dragCard",
     "dragend": "endCardDrag",
     "click"    : "clicked"
   },
   initialize: function() {
-    // this.collection.on('remove', this.render, this);
-    // this.render(); // This will cause render to run twice on initialization
   },
   render: function() {
     var outputHtml = '';
@@ -120,21 +128,20 @@ app.CardView = Backbone.View.extend ({
   addCard: function(cardData) {
   },
   dragCard: function(dragEvent, data, clone, element) {
-    var seq = ($(dragEvent.target).children().first().text());
-    var val = ($(dragEvent.target).children().last().text());
-    dragEvent.originalEvent.dataTransfer.setData("text/plain", "seq:" + seq + " val:" + val);
-    console.log("sequence: " + seq + "; move: " + val);
-    console.log(dragEvent);
+    app.tempCard.sequence = this.model.get('sequence');
+    app.tempCard.move = this.model.get('move');
   },
   endCardDrag: function(card) {
-    //currentTarget.innerHtml
-    console.log(card.currentTarget);
-    console.log('drag end:');
+    console.log('cardView drag end:');
+    app.tempCard.sequence = undefined;
+    app.tempCard.move = undefined;
+    if (app.tempCard.validDrop) {
+      console.log('destroying card!');
+      this.model.destroy();
+    }
+    this.parentView.render();
     console.log(card);
   },
-  clicked: function() {
-    console.log(this.model.attributes);
-  }
 });
 
 app.RegisterView = Backbone.View.extend ({
@@ -153,9 +160,10 @@ app.RegisterView = Backbone.View.extend ({
     });
     this.childViews = [];
     this.collection.each(function (item){
-      var cardView = new app.PhaseView({model: item});
-      cardView.render();
-      self.childViews.push(cardView.$el);
+      var phaseView = new app.PhaseView({model: item});
+      phaseView.parentView = self;
+      phaseView.render();
+      self.childViews.push(phaseView.$el);
     });
     this.childViews.forEach(function (item){
       self.$el.append(item);
@@ -167,16 +175,13 @@ app.PhaseView = Backbone.View.extend ({
   className: 'phase',
   attributes: {'draggable': 'true'},
   events: {
-    // these are problematic. Doing something to one card fires the appropriate
-    // event on all cards.
     "dragstart": "dragCard",
+    "dragend"  : "dragEnd",
     "drop"     : "dropCard",
     "dragover" : "overValid",
     "click"    : "clicked"
   },
   initialize: function() {
-    // this.collection.on('remove', this.render, this);
-    // this.render(); // This will cause render to run twice on initialization
   },
   render: function() {
     var outputHtml = '';
@@ -190,25 +195,40 @@ app.PhaseView = Backbone.View.extend ({
   addCard: function(cardData) {
   },
   dragCard: function(dragEvent, data, clone, element) {
-    var seq = ($(dragEvent.target).children().first().text());
-    var val = ($(dragEvent.target).children().last().text());
-    dragEvent.data = "seq:" + seq + " val:" + val;
-    console.log("sequence: " + seq + "; move: " + val);
-    console.log(dragEvent);
+    app.tempPhase.move = this.model.get('move');
+    app.tempPhase.sequence = this.model.get('sequence');
+    app.tempPhase.validDrop = false;
   },
   dropCard: function(card) {
-    var seq = ($(card.target).children().first().text());
-    var val = ($(card.target).children().last().text());
-    console.log("phase drop!");
+    if (!this.model.has('sequence')) {
+      app.tempCard.validDrop = true;
+      app.tempPhase.validDrop = true;
+      if (app.tempCard.sequence) {
+        this.model.set({move: app.tempCard.move,
+                        sequence: app.tempCard.sequence});
+      } else if (app.tempPhase.sequence) {
+        this.model.set({move: app.tempPhase.move,
+                        sequence: app.tempPhase.sequence});
+      }
+    }
+    this.render();
+  },
+  dragEnd: function(card) {
+    console.log('cardView drag end:');
+    app.tempPhase.sequence = undefined;
+    app.tempPhase.move = undefined;
+    console.log(app.tempPhase);
+    if (app.tempPhase.validDrop) {
+      console.log('destroying phase!');
+      this.model.set({ sequence: undefined,
+                       move: undefined });
+    }
+    this.parentView.render();
     console.log(card);
   },
   overValid: function() {
     event.preventDefault();
-    console.log("phase target!");
   },
-  clicked: function() {
-    console.log(this.model.attributes);
-  }
 });
 
 app.ButtonsView = Backbone.View.extend ({
