@@ -134,7 +134,8 @@ app.CardView = Backbone.View.extend ({
     app.tempCard.sequence = undefined;
     app.tempCard.move = undefined;
     if (app.tempCard.validDrop) {
-      this.model.destroy(); //Bug here: destroying if dropped in invalid area
+      this.model.destroy();
+      app.tempCard.validDrop = false;
     }
     this.parentView.render();
   },
