@@ -3,6 +3,7 @@ require 'slim'
 require './game.rb'
 require 'uuid'
 require 'warden' # for auth
+require 'json'
 
 use Rack::Session::Cookie # for auth
 
@@ -25,6 +26,12 @@ end
 
 get '/' do
   slim :index
+end
+
+post '/api/turnSubmission/' do
+  puts 'turn submitted'
+  turnSubmission = params
+  puts turnSubmission
 end
 
 post '/api/login/' do

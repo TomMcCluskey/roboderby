@@ -134,7 +134,7 @@ app.CardView = Backbone.View.extend ({
     app.tempCard.sequence = undefined;
     app.tempCard.move = undefined;
     if (app.tempCard.validDrop) {
-      this.model.destroy();
+      this.model.destroy(); //Bug here: destroying if dropped in invalid area
     }
     this.parentView.render();
   },
@@ -232,16 +232,26 @@ app.goWatcher = function (registerView) {
     moveSubmission.register = registerView.collection.toJSON();
     if (moveSubmission.register.some(function(item) { 
       return unplayed(item); } )) {
-      window.alert('You have unplayed phases!');
-      return;
+      return window.alert('You have unplayed phases!');
     }
-    console.log('turn done');
+    console.log(moveSubmission);
+    $.post('/api/turnSubmission/', moveSubmission);
   });
 };
 
 app.powerDownWatcher = function () {
   $('#powerDown').click(function() {
-    console.log('Power down selected');
+    if(window.confirm('Are you sure you want to power down?')) {
+      console.log('Power down selected');
+      powerDownSubmission= { botNumber: testData.botNumber,
+                             poweredDown: true,
+                             register: [] };
+    }
+    $.ajax({
+      url: '/api/turnSubmission/',
+      type: 'POST',
+      data: powerDownSubmission
+    });
   });
 };
 
