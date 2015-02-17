@@ -18,7 +18,8 @@ class Board
                              facing: cell['facing'],
                              walls: cell['walls'],
                              laser: cell['invisibles']['laser'],
-                             pusher: cell['invisibles']['pusher']})
+                             pusher: cell['invisibles']['pusher'],
+                             special: cell['special']})
         square.x = x
         square.y = y
         row.push square
@@ -111,7 +112,7 @@ end
 class Square
 
   # Example Square: Square.new( {type => :gear, walls => [ :north, :south ]} )
-  attr_reader :type, :facing, :occupier, :x, :y, :walls, :laser, :pusher
+  attr_reader :type, :facing, :occupier, :x, :y, :walls, :laser, :pusher, :spawn
   def initialize(args)
     @type = args[:type] || 'empty'
     @facing = args[:facing] || 0
@@ -119,6 +120,8 @@ class Square
     @occupier = nil
     @laser = args[:laser] || nil
     @pusher = args[:pusher] || nil
+    @spawn = (args[:special] =~ /(spawn\d)/) ? $1 : nil
+    puts args[:special]
   end
 
   # just in case you want to play roborally on the command line, I guess
@@ -198,7 +201,7 @@ class Bot
 
   def execute(phase)
     phase -= 1
-    puts "phase #{phase}: #{@register[phase]}"
+    # puts "phase #{phase}: #{@register[phase]}"
     case @register[phase][:value]
     when 'Rotate Left' then @board.turn({bot: self, direction: 'left'})
     when 'Rotate Right' then @board.turn({bot: self, direction: 'right'})
@@ -265,10 +268,10 @@ class Deck
   end
 
   def shuffle
-    puts @cards
+    # puts @cards
     @cards.shuffle!
-    puts "****************"
-    puts @cards
+    # puts "****************"
+    # puts @cards
   end
 
   def draw
@@ -286,7 +289,8 @@ class Game
     @deck = Deck.new
     @board = args[:board]
     @winner = nil
-    take_turn
+    @moves = []
+    # take_turn
   end
 
   def take_turn
@@ -299,10 +303,20 @@ class Game
     @PHASE_COUNT.times do
       @bots.each { |bot| bot.execute(phase) } #testing only
       phase += 1
-      puts @board
+      # puts @board
     end
     @winner = "Tom!"
     take_turn unless @winner
+  end
+
+  def collect_moves(submission)
+    @moves.push(submission)
+    if @moves.length >= @bots.length do
+      # program bots
+    end 
+    puts submission
+    else
+    end
   end
 
 end

@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+  link href='/styles.css' rel='stylesheet' type='text/css'
+  script src="../js/socket.js"
+    title Roboderby!
+
+  body
+    h1 The Login Screen
+    div
+      form#login_form action="/api/login/" method="post"
+        label for="username" Name: 
+        input id="username"  name="username" type="text"
+        br
+        label for="password" Password: 
+        input id="password" name="password" type="password"
+      button#submit form="login_form" type="submit" Go!
+    h1 Sockets!
+    form#form
+      input type="text" id="input" value="send a message"
+    div#msgs

@@ -15,7 +15,7 @@ html
         - for row in @board.space
           <tr>
           - for square in row
-            <td class="#{square.type} face#{square.facing}" id="x#{square.x}y#{square.y}">
+            <td class="#{square.type} face#{square.facing} #{square.spawn}" id="x#{square.x}y#{square.y}">
             - if square.occupier
               <img src="../images/arrow.png" class="bot face#{square.occupier.facing}" />
             - if square.laser != ""

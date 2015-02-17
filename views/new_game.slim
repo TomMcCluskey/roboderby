@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+  link href='/styles.css' rel='stylesheet' type='text/css'
+  script src="../js/socket.js"
+    title Roboderby!
+
+  body
+    div#header
+      h1 RoboDerby!
+    div#board_options
+      form#board_builder action="/board/"
+        fieldset
+          legend Build Your Board
+          p
+            input type="checkbox" name="locked" id="locked" value="locked"
+            label for="locked" Use Password?
+          p
+            label for="password" Password: 
+            input type="text" disabled="true" id="password" name="password"
+          p
+            label for="board" Board: 
+            select#board
+              option value="maelstrom" Maelstrom
+          p
+            label for="flag_count" Number of Flags: 
+            select#flag_count
+              option 1
+              option 2
+              option 3
+              option 4
+              option 5
+        button Create
+    div#footer

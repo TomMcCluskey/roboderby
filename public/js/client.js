@@ -49,20 +49,20 @@ app.parseHand = function(handData) {
 
 app.parseCard = function(cardData) {
   var seq = Object.keys(cardData)[0];
-  return { sequence: seq, move: cardData[seq] };
+  return { sequence: seq, value: cardData[seq] };
 };
 
 app.hand.add(app.parseHand(testData.hand));
 _(app.numPhases).times(function(){
-  app.register.add({sequence: undefined, move: undefined});
+  app.register.add({sequence: undefined, value: undefined});
 });
 
 app.tempCard = {  sequence: undefined,
-                  move: undefined,
+                  value: undefined,
                   validDrop: false};
 
 app.tempPhase = { sequence: undefined,
-                  move: undefined,
+                  value: undefined,
                   validDrop: false};
 
 app.HandView = Backbone.View.extend ({
@@ -98,7 +98,7 @@ app.HandView = Backbone.View.extend ({
     app.tempCard.validDrop = true;
     app.tempPhase.validDrop = true;
     if (app.tempPhase.sequence) {
-      this.collection.add({move: app.tempPhase.move,
+      this.collection.add({value: app.tempPhase.value,
                            sequence: app.tempPhase.sequence});
     }
     this.render();
@@ -117,10 +117,10 @@ app.CardView = Backbone.View.extend ({
   },
   render: function() {
     var outputHtml = '';
-    var compiledTemplate = _.template('<p class="sequence"><%=sequence%></p><p class="move"><%=move%></p>');
+    var compiledTemplate = _.template('<p class="sequence"><%=sequence%></p><p class="value"><%=value%></p>');
     var data = {};
     data.sequence = this.model.get('sequence');
-    data.move = this.model.get('move');
+    data.value = this.model.get('value');
     outputHtml += compiledTemplate(data);
     $(this.el).append(outputHtml);
   },
@@ -128,11 +128,11 @@ app.CardView = Backbone.View.extend ({
   },
   dragCard: function() {
     app.tempCard.sequence = this.model.get('sequence');
-    app.tempCard.move = this.model.get('move');
+    app.tempCard.value = this.model.get('value');
   },
   endCardDrag: function(card) {
     app.tempCard.sequence = undefined;
-    app.tempCard.move = undefined;
+    app.tempCard.value = undefined;
     if (app.tempCard.validDrop) {
       this.model.destroy();
       app.tempCard.validDrop = false;
@@ -180,17 +180,17 @@ app.PhaseView = Backbone.View.extend ({
   },
   render: function() {
     var outputHtml = '';
-    var compiledTemplate = _.template('<p class="sequence"><%=sequence%></p><p class="move"><%=move%></p>');
+    var compiledTemplate = _.template('<p class="sequence"><%=sequence%></p><p class="value"><%=value%></p>');
     var data = {};
     data.sequence = this.model.get('sequence');
-    data.move = this.model.get('move');
+    data.value = this.model.get('value');
     outputHtml += compiledTemplate(data);
     $(this.el).append(outputHtml);
   },
   addCard: function(cardData) {
   },
   dragCard: function() {
-    app.tempPhase.move = this.model.get('move');
+    app.tempPhase.value = this.model.get('value');
     app.tempPhase.sequence = this.model.get('sequence');
     app.tempPhase.validDrop = false;
   },
@@ -199,10 +199,10 @@ app.PhaseView = Backbone.View.extend ({
       app.tempCard.validDrop = true;
       app.tempPhase.validDrop = true;
       if (app.tempCard.sequence) {
-        this.model.set({move: app.tempCard.move,
+        this.model.set({value: app.tempCard.value,
                         sequence: app.tempCard.sequence});
       } else if (app.tempPhase.sequence) {
-        this.model.set({move: app.tempPhase.move,
+        this.model.set({value: app.tempPhase.value,
                         sequence: app.tempPhase.sequence});
       }
     }
@@ -210,10 +210,10 @@ app.PhaseView = Backbone.View.extend ({
   },
   dragEnd: function(card) {
     app.tempPhase.sequence = undefined;
-    app.tempPhase.move = undefined;
+    app.tempPhase.value = undefined;
     if (app.tempPhase.validDrop) {
       this.model.set({ sequence: undefined,
-                       move: undefined });
+                       value: undefined });
     }
     this.parentView.render();
   },
@@ -224,8 +224,9 @@ app.PhaseView = Backbone.View.extend ({
 
 app.goWatcher = function (registerView) {
   $('#standardMove').click(function() {
+  var socket = new WebSocket('ws://localhost/api/turnSubmission');
     function unplayed(phase) {
-      return !((phase.move !== undefined) && (phase.sequence !== undefined));
+      return !((phase.value !== undefined) && (phase.sequence !== undefined));
     }
     var moveSubmission = {};
     moveSubmission.botNumber = testData.botNumber;
@@ -236,7 +237,7 @@ app.goWatcher = function (registerView) {
       return window.alert('You have unplayed phases!');
     }
     console.log(moveSubmission);
-    $.post('/api/turnSubmission/', moveSubmission);
+    // $.post('/api/turnSubmission/', moveSubmission);
   });
 };
 
@@ -265,4 +266,5 @@ $(function () {
   registerView.render();
   app.goWatcher(registerView);
   app.powerDownWatcher();
+  var socket = new WebSocket('ws://localhost');
 } );

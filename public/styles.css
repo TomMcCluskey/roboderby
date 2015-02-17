@@ -68,6 +68,78 @@ td:before {
 .l_merge_fast_conveyor:before {
   background-image: url('../images/l_merge_fast_conveyor.png');
 }
+.spawn1::before {
+  content: "1";
+  color: green;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.spawn2::before {
+  content: "2";
+  color: green;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.spawn3::before {
+  content: "3";
+  color: green;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.spawn3::before {
+  content: "3";
+  color: green;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.spawn4::before {
+  content: "4";
+  color: green;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.spawn5::before {
+  content: "5";
+  color: green;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.spawn6::before {
+  content: "6";
+  color: green;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.spawn7::before {
+  content: "7";
+  color: green;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.spawn8::before {
+  content: "8";
+  color: green;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
 .face1:before {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
