@@ -121,7 +121,6 @@ class Square
     @laser = args[:laser] || nil
     @pusher = args[:pusher] || nil
     @spawn = (args[:special] =~ /(spawn\d)/) ? $1 : nil
-    puts args[:special]
   end
 
   # just in case you want to play roborally on the command line, I guess

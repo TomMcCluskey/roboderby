@@ -20,7 +20,6 @@ before do
 end
 
 get '/board/' do
-  puts params
   etag @guid
   @board = Board.new(params[:board])
   # puts @board
@@ -32,7 +31,8 @@ get '/' do
   slim :index
 end
 
-get '/new_game' do
+get '/new_game/' do
+  puts "params: " + params.to_s
   slim :new_game
 end
 

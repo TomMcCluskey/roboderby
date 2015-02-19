@@ -2,17 +2,39 @@ doctype html
 html
   head
   link href='/styles.css' rel='stylesheet' type='text/css'
-  script src="../js/socket.js"
+  script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+  script src="../js/landing.js"
     title Roboderby!
 
-  body
-    div#header
+  body.landing
+    div.header
       h1 RoboDerby!
-    div#choices
-      div#lfm
-        h2 <a href="/lfm">Looking for More!</a>
-      div#in_progress
-        h2 <a href="/in_progress">In Progress</a>
-      div#new_game
-        h2 <a href="/new_game">New Game</a>
+    nav.main
+      ul
+        li.lfm
+          div
+            h2 <a href="/lfm">Looking for More!</a>
+            p Joinable games:
+        li.in_progress
+          div
+            h2 <a href="/in_progress">Watch A Game</a>
+            p Game viewing not currently available
+        li.new_game
+          div
+            h2 <a href="/new_game">New Game</a>
+            div#board_options
+              form#board_builder action="/new_game/"
+                fieldset
+                  legend Build Your Board
+                  p
+                    label for="game_name" Game Name: 
+                    input type="text" id="game_name" name="game_name"
+                  p
+                    input type="checkbox" name="locked" id="locked" value="locked"
+                    label for="locked" Use Password?
+                  p
+                    label for="password" Password: 
+                    input type="text" disabled="true" id="password" name="password"
+                button Create
     div#footer
+    script $(go)

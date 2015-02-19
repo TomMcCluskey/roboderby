@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
 table {
   empty-cells: show;
   border-collapse: collapse;
@@ -230,5 +231,51 @@ img.laser, img.wall, img.pusher{
 }
 #buttons {
   clear: both;
+  text-align: center;
+}
+
+/*******************************/
+/*      front page styles      */
+/*******************************/
+h1, h2, h3, h4 {
+  font-family: Audiowide;
+  text-align: center;
+}
+.landing {
+  background-color: #6F707D;
+  font-family: sans-serif;
+}
+.header {
+  text-align: center;
+}
+.main {
+  width: 80%;
+  margin: auto;
+  background-color: yellow;
+}
+.main ul {
+  list-style-type: none;
+}
+.main ul li {
+  float: left;
+  width: 30%;
+  height: 500px;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 5px;
+}
+h2 a {
+  color: black;
+}
+.lfm {
+  background-color: #FF4B1C;
+}
+.in_progress {
+  background-color: #1439B2;
+}
+.new_game {
+  background-color: #66B20B;
+}
+button {
   text-align: center;
 }
