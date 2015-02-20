@@ -20,6 +20,7 @@ before do
 end
 
 get '/board/' do
+  puts params.to_s
   etag @guid
   @board = Board.new(params[:board])
   # puts @board

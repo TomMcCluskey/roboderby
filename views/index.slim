@@ -13,19 +13,19 @@ html
       ul
         li.lfm
           div
-            h2 <a href="/lfm">Looking for More!</a>
+            h2 Looking for More!
             p Joinable games:
         li.in_progress
           div
-            h2 <a href="/in_progress">Watch A Game</a>
+            h2 Watch A Game
             p Game viewing not currently available
         li.new_game
           div
-            h2 <a href="/new_game">New Game</a>
+            h2 New Game
             div#board_options
-              form#board_builder action="/new_game/"
+              form#make_game action="/new_game/"
                 fieldset
-                  legend Build Your Board
+                  legend Make A New Game
                   p
                     label for="game_name" Game Name: 
                     input type="text" id="game_name" name="game_name"
